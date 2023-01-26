@@ -13,11 +13,33 @@
     <header>헤더</header>
         <nav>내비</nav>
     <main>메인</main>
-    <section>섹션</section>
-    <article>아티클</article>
+    <!-- 하나 이상의 제목이 반드시 포함, h2~h6까지 가능 -->
+    <section><h2>섹션</h2></section>
+    <!-- 하나 이상의 제목이 반드시 포함, h2~h6까지 가능 -->
+    <article><h2>아티클</h2></article>
     <footer>푸터</footer>
+    
+    <header>
+        <!-- <header>헤더</header> 안에 header는 사용할 수 없다. -->
+    <section><h2>헤더</h2></section>
+    <!-- <header>헤더</header> -->
+    </header>
+        <nav>내비</nav>
+    <!-- <main>메인</main> -->
+    <!-- main태그는 본문에 1번만 사용!!! -->
+    <!-- section, article 은 하나 이상의 제목을 반드시 포함한다. -->
+    <section><h2>섹션</h2></section>
+    <article><h2>아티클</h2></article>
+    <footer>
+        <!-- footer 안에 header, footer은 사용할 수 없다. -->
+        <!-- <header>헤더</header> -->
+        <article><h2>아티클</h2></article>
+        <!-- <footer>푸터</footer> -->
+    </footer>
         
         <h2>HTML5 이전</h2>
-        <div>분할</div>
+        <div>
+            <div>분할</div>
+        </div>
 </body>
 </html>
