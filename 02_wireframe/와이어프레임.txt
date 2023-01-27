@@ -1,0 +1,59 @@
+*-------------- 헤더 -------------*
+*-------------- 메뉴 -------------*
+HOME   ABOUT   PORTFOLIO   CONTACT
+
+*-------------- 로고 -------------*
+MY WEBSITE LOGO
+
+*-------------- 섹션2 -------------*
+ABOUT ME 
+I love photography
+
+My Name
+
+We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Im really good at:
+
+Photography
+Web Design
+Photoshop
+
+Partners
+Projects Done
+Happy Clients
+Meetings
+
+*-------------- 섹션3 -------------*
+PORTFOLIO
+
+MY WORK
+Here are some of my latest lorem work ipsum tipsum.
+Click on the images to make them bigger
+
+LOAD MORE
+
+
+*-------------- 섹션4 -------------*
+CONTACT
+ 
+I'd love your feedback!
+
+ Chicago, US
+ Phone: +00 151515
+ Email: mail@mail.com
+
+Swing by for a cup of , or leave me a note:
+
+Name
+Email
+Message
+
+SEND MESSAGE
+
+*-------------- 푸터 -------------*
+To the top
+
+Powered by w3.css
