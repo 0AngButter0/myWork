@@ -17,21 +17,22 @@ Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eius
 
 Im really good at:
 
-Photography
-Web Design
 Photoshop
+Illustraor
+HTML+CSS
+JavaScript
 
-Partners
 Projects Done
-Happy Clients
-Meetings
+Coding
+Page Design
+National Technical Qualificatio
 
 *-------------- 섹션3 -------------*
 PORTFOLIO
 
 MY WORK
-Here are some of my latest lorem work ipsum tipsum.
-Click on the images to make them bigger
+여기에 저의 최근 작품들이 있습니다.
+이미지를 클릭하면 큰 이미지로 볼 수 있습니다.
 
 LOAD MORE
 
@@ -39,21 +40,48 @@ LOAD MORE
 *-------------- 섹션4 -------------*
 CONTACT
  
-I'd love your feedback!
+WHERE I WORK
+당신의 연락을 기다리고 있습니다.
 
- Chicago, US
- Phone: +00 151515
- Email: mail@mail.com
+인천 광역시 남동구 
+ Phone: 010-7777-8888
+ Email: mail@naver.com
 
-Swing by for a cup of , or leave me a note:
+전화 주시거나 메일 주시면 연락드리겠습니다:
 
-Name
-Email
-Message
+이름
+이메일
+메시지
 
-SEND MESSAGE
+메시지 전송
 
 *-------------- 푸터 -------------*
 To the top
 
-Powered by w3.css
+Copyright 2023 HGD. All rights reserved 
+
+
+
+
+
+*-------------- 설명글 -------------*
+
+Header Area
+내비게이션 메뉴 항목 왼쪽에는 각각 관련 아이콘을 추가한다. 헤더는 상단에 고정하여 아래쪽 배경이미지가 보이도록 디자인한다.
+
+Section #1 Area
+나와 연관된 큰 이미지를 배경으로 사용한다.
+
+Section #2 Area
+증명사진이 아닌 자연스러운 나의 사진으로 지정하고, 진행바 제목 왼쪽에 관련 아이콘을 추가한다.
+
+Section #3 Area
+증명사진이 아닌 자연스러운 나의
+사진으로 지정하고, My Work 아래 콘텐츠 이미지는 8장의 포트폴리오 이미지로 지정한다.
+
+Section #4 Area
+상단의 이미지는 연락과 연관된 큰이미지를 배경으로 지정한다. 콘텐츠 이미지는 나의 위치를 알 수 있는 지도 이미지로 지정하고, 주소, 전화번호, 이메일 왼쪽에는 가각 관련 아이콘을 추가한다. 또한 이름, 이메일 메시지는 입력사장자 형태로 디자인한다.
+
+Footer Area
+To the top 버튼 아래는 나와 관련된 3~6개 사이의 SNS 아이콘을 지정한다.
+
