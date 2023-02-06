@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
-        p {color:red;}
+        /* h1 {color:red;}
+        h2 {color:red;}
+        ul {color:red;} */
+
+        /* 그룹 선택기: 선택기1, 선택기2, ... */
+        html, body, h1, h2, ul, li {color: red;}
+
+        /* 범용(전체) 선택기: *을 넣으면 전부 바꿔 버린다. */
+        /* 가능한 사용을 자재하는 것이 좋다.(불필요한 로딩이 더 길어진다.) */
+        * {color:red;}
+
     </style>
 </head>
 <body>

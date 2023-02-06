@@ -4,3 +4,4 @@
 /* 요소/타입/태그 선택기 */
 body {background-color:yellowgreen;}
 h1 {background-color:green; color:aliceblue;}
+h1 {border-width: 20; height: 60;}
