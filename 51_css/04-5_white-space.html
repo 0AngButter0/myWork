@@ -6,19 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
+        /* 자동 줄 바꿈(o), Enter(x), space와tab(X) */
         .p1 {white-space: normal;}
-        /* 자동 줄 바꿈이 되지 않는다. */
+        /* 자동 줄 바꿈(x). Enter(x), space와tab(x) */
         .p2 {white-space: nowrap;}
-        /* 자동 줄 바꿈이 되지 않는다. */
+        /* 자동 줄 바꿈(x). Enter(o), space와tab(o)*/
         .p3 {white-space: pre;}
-
+        /*  자동 줄 바꿈(o), Enter(o), space와tab(o) */
         .p4 {white-space: pre-wrap;}
+        /*  자동 줄 바꿈(o), Enter(o), space와tab(X) */
         .p5 {white-space: pre-line;}
     </style>
 </head>
 <body>
     <h1>CSS 텍스트 속성</h1>
     <h2>white-space</h2>
-    <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!</p>
+    <p class="p1">Lorem                  ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem                    ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!</p>
+    <p class="p2">Lorem                  ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem                    ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!</p>
+    <p class="p3">Lorem                  ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem                    ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!</p>
+    <p class="p4">Lorem                  ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem                    ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!</p>
+    <p class="p5">Lorem                  ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem                    ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatum!</p>
 </body>
 </html>
