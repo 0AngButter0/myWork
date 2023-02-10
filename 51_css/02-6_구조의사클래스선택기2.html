@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            :nth-of-type(n) -> 타입을 구분한다.
+            :nth-child(n) -> 타입을 구분하지 않는다.
+            n: 숫자/number 1,2,3,..., odd(홀수), even(짝수), 2n-1, 2n, 3n, ....('수혈' 이라고도 한다.)
+        */
+        /* 홀수 */
+        /* p:nth-of-type(odd) {color:red;} */
+        p:nth-of-type(2n+1) {color:red;}
+        p:nth-of-type(2n-1) {color:red;}
+
+        /* 짝수 */
+        /* p:nth-of-type(even) {color:blue;} */
+        /* 2n -> 2*1, 2*2, 2*3, ... -> 2, 4, 6, ... */
+        p:nth-of-type(2n) {color:blue;}
+        /* 3n -> 3*1, 3*2, 3*3, ... -> 3, 6, 9, ... */
+        p:nth-of-type(3n) {color:gray;}
+       
+        /*
+            body에서 부터 시작해서 순서를 샌다. 
+            그 중에서도 p를 선택기로 선택했기에 p태그만 색이 입혀진다.
+        */
+        p:nth-child(3) {background-color:green;}
+        p:nth-child(4) {background-color:yellow;}
+        p:nth-child(5) {background-color:orange;}
+        p:nth-child(6) {background-color:red;}
+    </style>
+</head>
+<body>
+    <h1>1, h1 중에서 1</h1>
+    <h2>2, h2 중에서 1</h2>
+    <p>3, p 중에서 1</p>
+    <p>4, p 중에서 2</p>
+    <p>5,. p 중에서 3</p>
+    <p>6, p 중에서 4</p>
+    <p>7, p 중에서 5</p>
+    <p>8, p 중에서 6</p>
+    <p>9, p 중에서 7</p>
+    <p>10, p 중에서 8</p>
+    <p>11, p 중에서 9</p>
+    <p>12, p 중에서 10</p>
+</body>
+</html>
