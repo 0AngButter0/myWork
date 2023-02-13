@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            박스 모델
+            가로크기: width
+            세로크기: height
+            테두리: border
+            여백: margin
+            패딩(안 쪽 여백?): padding
+        */
+        div { width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+
+        /* 이미지가 안보이는 이유? div의 높이가 0 */
+        /* 
+            배경이미지
+            background-repeat: repeat;
+        */
+        .div1 {
+            background-color: yellow;
+            background-image: url(assets/House.jpg);
+            background-repeat: no-repeat;
+            /* background-position:가로 세로; */
+            /* 가로: left, right, center */
+            /* 세로: top, bottom, center */
+            /* 가로/세로 중 한 쪽만 쓰면 나머지는 가운데로 지정된다. */
+            /* 숫자(단위)를 하나만 사용하면 가로를 가리킨다. */
+            background-position: left;
+            /* background-size: 가로(w) 세로(h); */
+            /* 숫자(단위)를 하나만 사용하면 가로 크기를 말하고, 세로는 비율적으로 조정된다. */
+            /* 크기: auto, cover, contain */
+            /* cover는 이미지를 가득 채우지만 잘린다.
+            cotain는 이미지가 잘리진 않지만 다 나온다. */
+            background-size: contain;
+
+            /* backgroud:색 이미지 반복여부 위치/크기; */
+            backgroud:yellow url(assets/House.jpg) no-repeat left/contain;
+        }
+        img {
+            width:100%;}
+    </style>
+</head>
+<body>
+    <h1>배경</h1>
+    <h2>배경 이미지</h2>
+    <div class="div1"></div>
+    <hr>
+    <h2>img 요소</h2>
+    <div>
+        <img src="assets/House.jpg" alt="건축 이미지1">
+    </div>
+</body>
+</html>

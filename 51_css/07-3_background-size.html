@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+            배경 이미지의 크기
+            background-size: w크기(너비) [h크기(높이)];
+            단위: px(em, rem), %
+            너비/높이: auto, cover, contain
+            cover: 이미지가 일부 잘릴 수 있으나 가득 채움
+            contain: 이미지는 잘리지 않으나 빈공간이 생길 수 있음
+            숫자(단위)를 하나만 사용하면 너비를 나타내고, 높이는 비례적으로 조정된다.
+        */
+        div { 
+            width: 300px;
+            height: 350px;
+            border: 1px solid red;
+            margin: 20px
+        }
+
+        /* 
+            background-repeat: 배경이미지 반복 여부
+        */
+        div {
+            background-image: url(assets/House.jpg);
+            background-repeat: no-repeat;
+        }
+        /* 숫자 0은 단위 생략 가능 */
+        /* 숫자(단위)의 경우 하나만 쓰면 x위치를 말하고, y위치는 가운데로 설정됩니다. */
+        /* auto: 원래 이미지 사이즈 */
+        .div1 {background-size: auto;}
+        .div2 {background-size: cover;}
+        .div3 {background-size: contain;}
+        .div4 {background-size: 500px 333px;}
+        .div5 {background-size: 333px;}
+        /* %는 이미지 배경이 들어가는 박스가 기준이다. */
+        .div6 {background-size: 100% 100%;}
+        .div7 {background-size: 100%;}
+    </style>
+
+</head>
+<body>
+    <h1>배경</h1>
+    <h2>배경 이미지 크기</h2>
+    <div class="div1">auto</div>
+    <div class="div2">cover</div>
+    <div class="div3">contain</div>
+    <div class="div4">500px 333px</div>
+    <div class="div5">333px</div>
+    <div class="div6">100% 100%</div>
+    <div class="div7">100%</div>
+</body>
+</html>
