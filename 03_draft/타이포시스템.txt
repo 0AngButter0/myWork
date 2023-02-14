@@ -1,0 +1,20 @@
+타이포 시스템
+
+a	15px, #777777
+a:hover	15px, #000000
+
+
+h1	24px,(자간)10px, #ffffff	로고
+h2	36px, #fff, 자간10px		PORTFOLIO, CONTACT
+h3	24px, #777		ABOUT ME< MY WORK< WHERE I WORK
+h4	18px, #777		Im ready good at:
+
+body	15px, #777, 줄간격1.8
+span	자간10px			Photoshop, Illustraor, HTML+CSS, JavaScript
+span	24px, #fff			55+
+
+button		15px, #000
+button		15px, #fff
+button:hover	15px, #000
+
+adress	18px, #777, 줄간격1.8	인천 광역시 남동구

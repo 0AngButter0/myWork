@@ -16,8 +16,8 @@ I love publisng
 Byeong Jin-Kim
 15px(bold),  #777777
 
+본문: 15px, #777, 줄간격1.8
 We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-본문: 15px, #777777
 
 Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
@@ -28,44 +28,62 @@ Photoshop
 Illustraor
 HTML+CSS
 JavaScript
+15px, #777, 자간10px
+퍼세트: 15px, #fff
 
+숫자: 24px, #fff
 Projects Done
 Coding
 Page Design
 National Technical Qualificatio
+15px, #fff
 
 *-------------- 섹션3 -------------*
 PORTFOLIO
+36px, #fff, 자간10px
 
 MY WORK
+24px, #777
 여기에 저의 최근 작품들이 있습니다.
 이미지를 클릭하면 큰 이미지로 볼 수 있습니다.
+15px, #777, italic, 줄간격1.8
 
 LOAD MORE
+15px, #000
 
 
 *-------------- 섹션4 -------------*
 CONTACT
- 
+36px, #fff, 자간10px
+
 WHERE I WORK
+24px, #777
 당신의 연락을 기다리고 있습니다.
+15px, #777, italic
 
 인천 광역시 남동구 
  Phone: 010-7777-8888
  Email: mail@naver.com
+18px, #777, 줄간격1.8
 
 전화 주시거나 메일 주시면 연락드리겠습니다:
+15px, #777
 
 이름
 이메일
 메시지
+15px, #777
 
 메시지 전송
+15px, #fff(호버시 #000)
 
 *-------------- 푸터 -------------*
 To the top
+15px, #000
 
-Copyright 2023 HGD. All rights reserved 
+Copyright 2023 HGD. All rights reserved.
+15px, #fff
+
 
 
 

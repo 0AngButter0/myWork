@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
+        div {
+            height: 800px;
+            border: 1px solid red;
+            margin: 20px
+        }
+
         /* 
             배경 이미지의 고정 여부
             background-attachement: 값;
@@ -13,26 +20,35 @@
             scroll: 배경 이미지가 스크롤 된다.
             fixed: 배경 이미지가 고정된다.
         */
-        div { 
-            width: 300px;
-            height: 350px;
-            border: 1px solid red;
-            margin: 20px
-        }
 
         /* 
             background-repeat: 배경이미지 반복 여부
         */
-        div {
-            background-image: url(assets/House.jpg);
+        .div1 {
+            /* background-image: url(assets/parallax1.jpg);
             background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            background-attachment: fixed; */
+
+            /* 속기 형태로 한번에 쓸 수 있다. */
+            /* background: URL 반복 위치/크기 고정; */
+            background: url(assets/parallax1.jpg) no-repeat top/cover fixed;
         }
     </style>
 
 </head>
+
 <body>
     <h1>배경</h1>
-    <h2>배경 이미지 고정 여부</h2>
-    <div class="div1">텍스트</div>
+    <h2>패럴렉스 스크롤</h2>
+    <div class="div1">배경 이미지</div>
+    <div class="div2">
+        <h3>콘텐츠의 제목</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit illum saepe officiis! Eligendi atque
+            adipisci tempora explicabo unde labore dolorem similique quo nihil nostrum perferendis iusto debitis,
+            quisquam non dolorum.</p>
+    </div>
 </body>
+
 </html>
