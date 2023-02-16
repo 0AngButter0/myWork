@@ -6,7 +6,17 @@
 font-family: 'Noto Sans KR', sans-serif;     */
 
 /* 초기화 */
+* {
+    box-sizing: border-box;
+}
+body, ul {
+    margin: 0;
+}
 ul {
+    margin:0;
+    padding: 0;
+}
+li {
     list-style-type: none;
 }
 

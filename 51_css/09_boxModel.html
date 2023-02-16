@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        body {margin:0;}
+        h1 {
+            background:green;
+            margin: 0px;
+        }
+
+        .container div {background:yellow;}
+
+        .container {
+            background:red;
+            width:50%;
+            /* height:1000px; */
+        }
+
+        .container div {
+            background:yellow;
+            padding:20px;
+            margin:100px;
+            border:10px solid black;
+        }
+        
+        /* 
+            요소의 가로 크기 auto는 100%
+            요소의 세로 크기 auto는 콘텐츠 크기, 만약 콘텐츠가 없으면 0
+            콘텐츠란? 텍스트, 이미지, 비디오, 요소(tag)
+        */
+        .div1 {width:auto;}
+        .div1 {width:100%;}
+        .div1 {height:auto;}
+        /* %는 부모 크기 기준 */
+        /* 위 아래 큰쪽으로 지정된다. 주의! */
+        .container .div2 {
+            width:50%;
+            height:50%;
+            margin:30px;
+        }
+        .div3 {
+            width:250px;
+            height:250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>박스 모델</h1>
+    <div class="container">
+        <div class="div1">박스1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, perspiciatis repudiandae consequatur mollitia obcaecati recusandae maxime nemo inventore amet ipsum sapiente temporibus veniam! Ex culpa quam quae laudantium deserunt in!</div>
+        <div class="div2">박스2: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestias magni quo soluta nulla illum optio odio architecto, quae, tempora eaque exercitationem sunt voluptatum, a vero repellat reprehenderit officiis eveniet.</div>
+        <div class="div3">박스3: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestias magni quo soluta nulla illum optio odio architecto, quae, tempora eaque exercitationem sunt voluptatum, a vero repellat reprehenderit officiis eveniet.</div>
+    </div>
+</body>
+</html>
