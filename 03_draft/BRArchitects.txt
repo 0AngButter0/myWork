@@ -1,0 +1,65 @@
+/*-----------header----------*/
+/*-----------logo----------*/
+BR Architects
+A #ffffff   A:hover #cccccc	'Verdana', 'Segoe UI'  15px/자간 4px, 
+
+/*-----------nav----------*/
+Projects	About	Contact
+A #ffffff   A:hover #cccccc 	'Verdana' 15px/letter-spacing:4px(자간),
+
+/*-----------section1----------*/
+img
+
+BR Architects
+h1 	36px/4px/54px  #f1f1f1
+
+/*-----------section2----------*/
+Projects
+h3   24px/36px #000000
+
+Summer House	Brick House	Renovated	Barn House
+
+Summer House	Brick House	Renovated	Barn House
+P 15px  #ffffff 	line-height:22.5(줄간격)
+
+
+/*-----------section3----------*/
+About
+h3 h3   24px/36px #000000
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+p 15px/22.5px #000000
+
+John Doe		Jane Doe		Mike Ross		Dan Star
+h3
+
+CEO & Founder	Architect		Architect		Architect
+p
+
+Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum. x4
+P
+
+Contact		Contact		Contact		Contact
+[button] 15px #cccccc  hover:000000
+
+/*-----------section4----------*/
+Contact
+h3
+
+Lets get in touch and talk about your next project.
+p
+
+Name
+Email
+Subject
+Comment
+[INPUT]
+
+SEND MESSAGE
+
+img
+
+/*-----------footer----------*/
+Powered by w3.css
+p
+
