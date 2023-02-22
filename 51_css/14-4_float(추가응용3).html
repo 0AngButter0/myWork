@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
-        .img, p {float:left;}
-    </style>
+        .container {
+            width: 940px;
+            background: yellow;
+            /* overflow: 부모가 높이를 가지도록 해준다. */
+            overflow: auto;
+        }
+        img {
+            width:100%;
+            vertical-align: top;
+            margin-top:50px;
+        }
+        .wrap {float:left; width:45%;}
+        p {float:right; width:45%;}
+    </style
 </head>
 <body>
     <h1>이미지와 단락</h1>
     <hr>
     <div class="container">
-        <div class="img">
+        <div class="wrap">
             <img src="assets/House.jpg" alt="집">
         </div>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat voluptate laborum ipsam excepturi praesentium vitae eius blanditiis? Totam nobis et debitis repudiandae natus molestiae provident laudantium placeat, adipisci dignissimos. Cumque perspiciatis, accusamus, consequuntur provident ratione dicta velit ut modi quisquam illum hic incidunt alias nostrum voluptatum ex harum. Alias, magnam.</p>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 초기화(기본중의 기본) */
+        /* width값에 padding을 넣기위해서 box-sizing 처리를 한다. */
+        * {box-sizing:border-box;}
+        body {margin:0; line-height:1.8;}
+        ul {margin:0; padding:0;}
+        li {list-style:none;}
+        img {width:100%; vertical-align: top;}
+
+        .container {
+            /* background: yellow; */
+            /* 블록레벨요소를 가로 가운데 배치(width값이 있어야지 margin:auto;로 가운대 배치 가능) */
+            /* width값 940을 뺀 나머지 양쪽 옆을 오토로 맞춘다. */
+            width:940px;
+            margin:0 auto;
+        }
+        ul {overflow:auto;}
+        li {
+            float:left;
+            width:220px;
+            margin-right:20px;
+            margin-bottom:20px;
+        }
+        li:nth-of-type(4) ~li {margin-bottom:0;}
+        li:nth-of-type(4n) {margin-right:0;}
+    </style>
+</head>
+<body>
+    <h1>8장의 이미지를 4장씩 가로 배치</h1>
+    <hr>
+    <div class="container">
+        <ul>
+            <li><img src="http://placeimg.com/220/165/animals" alt="이미지1"></li>
+            <li><img src="http://placeimg.com/220/165/architecture" alt="이미지2"></li>
+            <li><img src="http://placeimg.com/220/165/nature" alt="이미지3"></li>
+            <li><img src="http://placeimg.com/220/165/people" alt="이미지4"></li>
+            <li><img src="http://placeimg.com/220/165/tech" alt="이미지5"></li>
+            <li><img src="http://placeimg.com/220/165/tech/grayscale" alt="이미지6"></li>
+            <li><img src="http://placeimg.com/220/165/people/sepia" alt="이미지7"></li>
+            <li><img src="http://placeimg.com/220/165/nature/grayscale" alt="이미지8"></li>
+        </ul>
+    </div>
+</body>
+</html>

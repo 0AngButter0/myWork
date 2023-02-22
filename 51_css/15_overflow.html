@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        .container {
+            background:red;
+            /* 자식이 플로트 되있으면 백그라운드에 변화가 없지만 오버플로우를 쓰면 적용된다. */
+            /* 오버플로우:히든을 쓰면 스크롤바가 백그라운드에 않생겨난다. */
+            overflow:hidden;
+        }
+        .container div {
+            float:left;
+            width:200px;
+            height:100px;
+            margin:20px;
+            background:yellow;
+        }
+        /* 있는 그대로 보여준다. */
+        .ovf1 {overflow:visible;}
+        /* 무조건 스크롤바 생겨남 */
+        .ovf2 {overflow:scroll;}
+        /* 넘치는 부분만 숨긴다. */
+        .ovf3 {overflow:hidden;}
+        /*  넘칠때만 스크롤바 생겨남 */
+        .ovf4 {overflow:auto;}
+    </style>
+</head>
+<body>
+    <h1>오버플로우</h1>
+    <p>콘텐츠가 요소의 범위를 넘칠 경우 넘친 부분을 그대로 표시(visible)하거나,숨기거나(hidden), 스크롤바(scroll, auto)를 나타낸다.</p>
+    <div class="container">
+        <div class="ovf1">visible: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi alias repellat vitae, repellendus ullam laborum porro nisi mollitia blanditiis nobis cum. Molestiae tempore quos qui totam inventore, expedita mollitia eum.</div>
+        <div class="ovf2">scroll: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi alias repellat vitae, repellendus ullam laborum porro nisi mollitia blanditiis nobis cum. Molestiae tempore quos qui totam inventore, expedita mollitia eum.</div>
+        <div class="ovf3">hidden: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi alias repellat vitae, repellendus ullam laborum porro nisi mollitia blanditiis nobis cum. Molestiae tempore quos qui totam inventore, expedita mollitia eum.</div>
+        <div class="ovf4">auto: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi alias repellat vitae, repellendus ullam laborum porro nisi mollitia blanditiis nobis cum. Molestiae tempore quos qui totam inventore, expedita mollitia eum.</div>
+    </div>
+</body>
+</html>
