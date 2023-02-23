@@ -17,6 +17,23 @@ button		15px, #fff
 button:hover	15px, #000
 
 span	자간10px			Photoshop, Illustraor, HTML+CSS, JavaScript
-span	24px, #fff			55+
+span	24px, #fff				55+
 
 adress	18px, #777, 줄간격1.8	인천 광역시 남동구
+
+
+컬러 시스템
+#777		본문글자색
+#fff		글자색			
+#000		글자색
+#ccc		메뉴:호버시
+#404040		로고바
+#616161		스킬바(100~0%)
+#f1f1f1		스킬바(100%)
+#666666		푸터 배경색
+
+#f1f1f1		LOAD MORE 버튼
+#cccccc		LOAD MORE 버튼:hover
+#000000		SED MESSAGE 버튼
+#cccccc		SED MESSAGE 버튼:hover
+#fffff		To the top 버튼
