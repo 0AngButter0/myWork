@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        p::before {
+            content:'♥.';
+            font-size:20px;
+            color:red;
+        }
+        p::after {
+            display:inline-[block;
+            width:50px;
+            height:50px;
+            content:'';
+            background:url(assets/스마일.png) 50% 50%/contain no-repeat;
+        }
+    </style>
+</head>
+<>
+    <!-- 의사 클래스 선택기는 콜론이 하나(:)-->
+    <!-- 의사 요소 선택기는 콜론이 두개(::) -->
+    <h1>선택기</h1>
+    <h2>의사 요소 선택기</h2>
+    <p>::before(이전): Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquid placeat labore, velit vitae, enim, minima id assumenda odit blanditiis eligendi. Enim sit obcaecati facilis inventore at sed atque similique? ::after(이후)</p>
+</body>
+</html>

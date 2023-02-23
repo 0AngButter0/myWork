@@ -13,7 +13,7 @@
     <!-- 헤더 -->
     <header>
         <nav>
-            <ul>
+            <ul class="clearfix">
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">PORTFOLIO</a></li>
@@ -31,45 +31,49 @@
     <!-- 섹션2 -->
     <section>
         <h3>ABOUT ME</h3>
-        <p><em>I love Web Design</em></p>
-        <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</p>
-        <p><b>Kim byeong-jin</b></p>
-        <img src="images/Photo of Me.jpg" alt="나의 사진">
-        <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat.</p>
-        <div>
-            <p>Im really good at:</p>
-            <ul>
-                <li>
-                    <p>Photoshop</p>
-                    <div>90%</div>
-                </li>
-                <li>
-                    <p>Illustrator</p>
-                    <div>90%</div>
-                </li>
-                <li>
-                    <p>HTML+CSS</p>
-                    <div>90%</div>
-                </li>
-                <li>
-                    <p>JavaScript</p>
-                    <div>80%</div>
-                </li>
-            </ul>
-        </div>
+        <p class="tac"><em>I love Web Design</em></p>
+        <div class="container">
+            <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            <div class="clearfix pf2">
+                <div>
+                    <p class="tac"><b>Kim byeong-jin</b></p>
+                    <img src="images/Photo of Me.jpg" alt="나의 사진">
+                </div>
+                <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillumdolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiadeserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipex ea commodo consequat.</p>
+            </div>
+            <div class="skill">
+                <h4>Im really good at:</h4>
+                <ul>
+                    <li>
+                        <p>Photoshop+Illustrator+Figma</p>
+                        <div><span>90%</span></div>
+                    </li>
+                    <li>
+                        <p>HTML5+Css3</p>
+                        <div><span>85%</span></div>
+                    </li>
+                    <li>
+                        <p>JavaScript+jQuery</p>
+                        <div><span>75%</span></div>
+                    </li>
+                </ul>
+            </div> <!-- //.skill -->
+        </div><!-- //.container -->
+        <ul class="pf3 clearfix">
+            <li><span>3+</span>Project Done</span></li>
+            <li><span>3+</span>Page Design</span></li>
+            <li><span>3+</span>Coding</span></li>
+            <li><span>3+</span>National Technical Qualification</span></li>
+        </ul>
     </section><!-- //섹션2 -->
 
     <!-- 섹션3 -->
@@ -78,12 +82,13 @@
             <img src="images/parallax2.jpg" alt="작품 이미지">
             <h2>PORTFOLIO</h2>
         </div>
-        <div>
-            <h3>MY WORK</h3>
-            <p><em>나의 최근 작품들이 여기에 있습니다.</em><br>
-                <em>클릭하면 큰이미지로 볼 수 있습니다.</em>
-            </p>
-            <ul>
+        <h3>MY WORK</h3>
+        <p class="tac">
+            <em>나의 최근 작품들이 여기에 있습니다.</em><br>
+            <em>클릭하면 큰이미지로 볼 수 있습니다.</em>
+        </p>
+        <div class="container myWork">
+            <ul class="clearfix">
                 <!-- ctrl+alt+아래방향키: 수직으로 다중커서 선택 가능 -->
                 <li><img src="images/pf_bearCloseup.jpg" alt="Bear Closeup"></li>
                 <li><img src="images/pf_coffeeBeans.jpg" alt="Coffee Beans"></li>

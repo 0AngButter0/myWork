@@ -10,10 +10,15 @@
         body {margin:0; line-height:1.8;}
         ul {margin:0; padding:0;}
         li {list-style:none;}
+        .clearfix::after {
+            content:''; 
+            clear:both; 
+            display:block;
+        }
 
         .container {
             background: yellow;
-            overflow:auto;
+            /* overflow:auto; */
         }
         li {
             float:left;
@@ -21,10 +26,10 @@
             text-align:center;
             padding:54px 0;
         }
-        li:nth-of-type(1) {background:#ccc}
+        /* li:nth-of-type(1) {background:#ccc}
         li:nth-of-type(2) {background:#bbb}
         li:nth-of-type(3) {background:#aaa}
-        li:nth-of-type(4) {background:#999}
+        li:nth-of-type(4) {background:#999} */
 
         span {
             display:block;
@@ -35,13 +40,11 @@
 <body>
     <h1>텍스트/이미지를 가로로 4등분</h1>
     <hr>
-    <div class="container">
-        <ul>
+        <ul class="container clearfix">
             <li>1<span>(1)</span></li>
             <li>2<span>(2)</span></li>
             <li>3<span>(3)</span></li>
             <li>4<span>(4)</span></li>
         </ul>
-    </div>
 </body>
 </html>

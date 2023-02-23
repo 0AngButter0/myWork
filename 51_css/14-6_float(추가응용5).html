@@ -21,7 +21,21 @@
             width:940px;
             margin:0 auto;
         }
-        ul {overflow:auto;}
+        /* .clearfix::after {
+            content:'';
+            clear:both;
+            display:block; */
+        
+        ul {
+            background:yellow;
+            /* overflow:auto; */
+        }
+        /* ul에 직접 ::after 적용 */
+        ul::after {
+            content:'';
+            clear:both;
+            display:block;
+        }
         li {
             float:left;
             width:220px;
