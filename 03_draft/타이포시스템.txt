@@ -32,8 +32,23 @@ adress	18px, #777, 줄간격1.8	인천 광역시 남동구
 #f1f1f1		스킬바(100%)
 #666666		푸터 배경색
 
-#f1f1f1		LOAD MORE 버튼
-#cccccc		LOAD MORE 버튼:hover
-#000000		SED MESSAGE 버튼
-#cccccc		SED MESSAGE 버튼:hover
-#fffff		To the top 버튼
+버튼
+#f1f1f1(bg), #000(color)	LOAD MORE 버튼		138*45
+#cccccc			LOAD MORE 버튼:hover	
+#000000			SED MESSAGE 버튼		160*45
+#cccccc			SED MESSAGE 버튼:hover
+#fffff			To the top 버튼		130*45
+
+이미지
+폼
+
+
+
+
+
+
+
+
+
+
+

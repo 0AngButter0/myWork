@@ -79,7 +79,7 @@ WHERE I WORK
 
 *-------------- 푸터 -------------*
 To the top
-15px, #000
+15px, #666        bg#000
 
 Copyright 2023 HGD. All rights reserved.
 15px, #fff
