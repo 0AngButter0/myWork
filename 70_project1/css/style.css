@@ -40,6 +40,8 @@ img {
 button {
     font-size: 1.5rem;
     color: #000;
+    /* 커서에 가져다 대면 손가락 모양이 나타남 */
+    cursor:pointer;
 }
 
 /* 타이포 */
@@ -80,6 +82,7 @@ h4 {
 button {
     font-size: 1.5rem;
     color: #fff;
+    border:none;
 }
 
 button:hover {
@@ -124,9 +127,44 @@ nav li a:hover {
     /* 블록레벨을 가운대배치 */
     margin:0 auto;
 }
-/* 섹션1 */
-/* 섹션2 */
 
+/* 패럴렉스 이미지 */
+/* id는 앞에 #을 쓴다. */
+#sec1 {
+    position:relative;
+    height:1045px;
+    background: url(../images/parallax1.jpg)
+    no-repeat 50% 50%/cover fixed;
+}
+
+#sec3 .para {
+    height:405px;
+    background: url(../images/parallax2.jpg)
+    no-repeat 50% 50%/cover fixed;
+}
+
+#sec4 .para {
+    height:405px;
+    background: url(../images/parallax3.jpg)
+    no-repeat 50% 50%/cover fixed;
+}
+
+/* 섹션1 */
+.logo {
+    position: absolute;
+    /* width:416px;
+    line-height:54px; */
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    padding:12px 24px;
+    line-height:1;
+    /* margin-left:-208px;
+    margin-top:-27px; */
+    background: #404040;
+}
+
+/* 섹션2 */
 /* 섹션2 - 프로필2: 내사진과 프로필 텍스트 */
 .pf2 div {
     float:left;
@@ -173,12 +211,88 @@ nav li a:hover {
     display:block;
 }
 
+/* 섹션3 - 타이틀 */
+#sec3 .para h2 {
+    line-height: 405px;
+}
+
 /* 섹션3 */
+.myWork {
+    text-align: center;
+}
 .myWork li {
     width:220px;
     height:160px;
     float:left;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+.myWork li:nth-of-type(4n) {
+    margin-right: 0;
+}
+.myWork a{
+    display: inline-block;
+    width:138px;
+    line-height: 45px;
+    background: #f1f1f1;
+    color: #000;
+}
+.myWork a:hover {
+    background: #ccc;
 }
 
-/* 섹션4 */
+/* 섹션4 - 타이틀 */
+#sec4 .para h2 {
+    line-height:405px;
+}
+.map {
+    float:left;
+    width: 285px;
+}
+.info {
+    float:right;
+    width:630px;
+}
+form {
+    text-align: right;
+}
+form input {
+    width:292px;
+    height:45px;
+    padding: 16px;
+}
+form input:nth-of-type(1) {
+    margin-right: 13px;
+}
+form input:nth-of-type(3) {
+    width:600px;
+    margin-top: 13px;
+}
+input::placeholder {
+    color:#ccc;
+}
+form button {
+    width:160px;
+    height:45px;
+    background: #000;
+}
+form button:hover {
+    background: #ccc;
+}
 /* 푸터 */
+footer {
+    height: 288px;
+    background: #616161;
+    text-align: center;
+    color:#fff
+}
+footer a {
+    display: inline-block;
+    width:130px;
+    line-height: 45px;
+    background: #fff;
+    color:#616161;
+}
+footer:hover {
+    background: #000;
+}

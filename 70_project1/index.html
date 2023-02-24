@@ -23,13 +23,12 @@
     </header><!-- //헤더 -->
 
     <!-- 섹션1 -->
-    <section>
-        <img src="images/parallax1.jpg" alt="나의 뒷모습">
+    <section id="sec1">
         <h1 class="logo">Kim Byeong Jin</h1>
     </section><!-- //섹션1 -->
 
     <!-- 섹션2 -->
-    <section>
+    <section id="sec2">
         <h3>ABOUT ME</h3>
         <p class="tac"><em>I love Web Design</em></p>
         <div class="container">
@@ -77,9 +76,8 @@
     </section><!-- //섹션2 -->
 
     <!-- 섹션3 -->
-    <section>
-        <div>
-            <img src="images/parallax2.jpg" alt="작품 이미지">
+    <section id="sec3">
+        <div class="para">
             <h2>PORTFOLIO</h2>
         </div>
         <h3>MY WORK</h3>
@@ -104,28 +102,34 @@
     </section><!-- //섹션3 -->
 
     <!-- 섹션4 -->
-    <section>
-        <div>
-            <img src="images/parallax3.jpg" alt="연락 관련 배경 이미지">
+    <section id="sec4">
+        <div class="para">
             <h2>CONTACT</h2>
         </div>
-        <div>
+        <div class="container">
             <h3>WHERE I WORK</h3>
-            <p>당신의 연락을 기다리고 있습니다.</p>
-            <img src="images/map.jpg" alt="나의 위치">
-            <div>
-                <address>인천 광역시 남동구<br>
-                    Phone: 010-7777-8888<br>
-                    Email: mail@naver.com</address>
-            </div>
-            <p>전화 주시거나 메일 주시면 연락드리겠습니다:</p>
-            <form action="message.php">
-                <input type="text" name="username" id="username" placeholder="이름">
-                <input type="email" name="useremail" id="useremail" placeholder="이메일">
-                <input type="text" name="usermsg" id="usermsg" placeholder="메시지">
-                <input type="submit" value="메시지 전송하기">
-            </form>
-        </div>
+            <p class="tac"><em>당신의 연락을 기다리고 있습니다.</em></p>
+            <!-- alt+W 하고 태그를 쓸때 div.map 을 쓰면 클래스까지 써진다. -->
+            <div class="where clearfix">
+                <div class="map">
+                    <img src="images/map.jpg" alt="나의 위치">
+                </div>
+                <div class="info">
+                    <div>
+                        <address>인천 광역시 남동구<br>
+                            Phone: 010-7777-8888<br>
+                            Email: mail@naver.com</address>
+                    </div>
+                    <p>전화 주시거나 메일 주시면 연락드리겠습니다:</p>
+                    <form action="message.php">
+                        <input type="text" name="username" id="username" placeholder="이름">
+                        <input type="email" name="useremail" id="useremail" placeholder="이메일">
+                        <input type="text" name="usermsg" id="usermsg" placeholder="메시지">
+                        <button type="submit">메시지 전송하기</button>
+                    </form>
+                </div> <!-- //.info -->
+            </div><!-- //where -->
+        </div><!-- //container -->
     </section><!-- //섹션4 -->
 
     <!-- 푸터 -->

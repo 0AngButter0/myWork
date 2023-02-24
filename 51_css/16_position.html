@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            width:200px;
+            height:100px;
+            background:red;
+            /* left, top, right, bottom, z-index(레이어 개념으로 이해하기 쉬움)은 static에는 적용되지 않는다. */
+            left:200px;
+            top:100px;
+        }
+        /* static과 relative 비슷 */
+        /* absolute와 fixed가 비슷 */
+        .pos1 {position: static;}
+        /* 자기자신 기준(즉, left를 적용하기 전 위치) */
+        .pos2 {position: relative;}
+        /* static이 아닌 조상 기준 */
+        .pos3 {
+            position: absolute;
+            /* z-index의 값은 정수로 숫자가 클수록 위로 올라감 */
+            z-index:3;
+        }
+        /* 뷰포트(브라우저 창) 기준 */
+        .pos4 {
+            position: fixed;
+            z-index:2;
+        }
+    </style>
+</head>
+<body>
+    <h1>위치</h1>
+    <div class="pos1">static</div>
+    <div class="pos2">relative</div>
+    <div class="pos3">absolute</div>
+    <div class="pos4">fixed</div>
+</body>
+</html>
