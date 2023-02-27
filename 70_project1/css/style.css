@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* 글꼴 링크는 항상 상단에 쓸것 */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Noto+Sans+KR:wght@100;400;700&display=swap');
+/* 링크를 임포트로 구글아이콘 연결 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
 /* font-family: 'Lato', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;     */
@@ -101,7 +103,41 @@ address {
     font-size: 1.8rem;
 }
 
-body * {outline:1px solid lime;}
+/* 아이콘 */
+/* first-of-type ~ li :li첫번째 이후부터 적용 */
+nav li:first-of-type ~ li a::before {
+    content:'';
+    display:inline-block;
+    width:11px;
+    height:11px;
+    padding-right:5px;
+    /* 백그라운드 개별속성으로 속성이 겹치지 않게 해준다. */
+    background-repeat:no-repeat;
+}
+nav li:nth-of-type(2) a::before {
+    background-image: url(../images/KakaoTalk_20230227_110038218.png);
+}
+nav li:nth-of-type(3) a::before {
+    background-image: url(../images/KakaoTalk_20230227_110038218_01.png);
+}
+nav li:nth-of-type(4) a::before {
+    background-image: url(../images/KakaoTalk_20230227_110038218_02.png);
+}
+
+form button img {
+    width:16px;
+    vertical-align: middle;
+    margin-right:5px;
+}
+form button span {
+    vertical-align: middle;
+}
+
+.toTheTop {
+    
+}
+
+/* body * {outline:1px solid lime;} */
 
 /* 헤더 */
 header {
@@ -286,13 +322,20 @@ footer {
     text-align: center;
     color:#fff
 }
-footer a {
+footer:hover {
+    background: #000;
+}
+.toTheTop {
     display: inline-block;
     width:130px;
     line-height: 45px;
     background: #fff;
     color:#616161;
 }
-footer:hover {
-    background: #000;
+.toTheTop:hover {
+    background:#ccc;
+    color:#000;
+}
+.toTheTop i {
+    margin-right: 5px;
 }
