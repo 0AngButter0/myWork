@@ -62,8 +62,8 @@ WHERE I WORK
 15px, #777, italic
 
 인천 광역시 남동구 
- Phone: 010-4762-1653
- Email: kimbungjin@naver.com
+Phone: 010-4762-1653
+Email: kimbungjin@naver.com
 18px, #777, 줄간격1.8
 
 전화 주시거나 메일 주시면 연락드리겠습니다:
