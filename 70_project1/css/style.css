@@ -3,54 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Noto+Sans+KR:wght@100;400;700&display=swap');
 /* 링크를 임포트로 구글아이콘 연결 */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
+@import url('reset.css');
 
 /* font-family: 'Lato', sans-serif;
 font-family: 'Noto Sans KR', sans-serif;     */
 
-/* 초기화 */
-* {
-    box-sizing: border-box;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul {
-    margin: 0;
-}
-
-ul {
-    padding: 0;
-}
-
-li {
-    list-style-type: none;
-}
-
-address {
-    font-style: normal;
-}
-
-.clearfix::after {
-    content: '';
-    clear: both;
-    display: block;
-}
-
 /* 텍스트 데코레이션으로 밑줄을 없앴다. */
 a {
     color: #777;
-    text-decoration: none
-}
-
-img {
-    /* 박스사이즈에 맞추기 위해 */
-    width: 100%;
-    /* 위아래 간격이 벌어지지 않게 */
-    vertical-align: top;
 }
 
 button {
