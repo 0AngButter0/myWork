@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML</title>
+    <title>HTML+CSS</title>
+    <style>
+        table, th ,td {
+            border:1px solid red;
+            border-spacing: 0;
+        }
+        /* border-spacing와 border-collapse은 <table>에만 지정한다. */
+        .table1 {
+            border-width:2px;
+            border-collapse: collapse;
+            caption-side:bottom
+        }
+        .table1 td, .table1 th {
+            border-width:2px;
+        }
+    </style>
 </head>
 <body>
     <h1>표</h1>
@@ -26,7 +41,7 @@
         </tr>
     </table>
     <hr>
-    <table>
+    <table class="table1">
         <caption>1학년 성적표</caption>
         <colgroup>
             <col>
@@ -118,7 +133,7 @@
         <tr>
             <td rowspan="2">HTML</td>
             <td colspan="2">Illustrator</td>
-            <td lowspan="3">Figma</td>
+            <td rowspan="3">Figma</td>
         </tr>
         <tr>
             <td colspan="2" rowspan="2">Photoshop</td>

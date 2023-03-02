@@ -236,9 +236,15 @@ em {
 
 /* 섹션2 */
 /* 섹션2 - 프로필2: 내사진과 프로필 텍스트 */
+.pf2 {
+    margin-top:70px;
+}
 .pf2 div {
     float: left;
     width: 425px;
+}
+.pf2 div p {
+    margin-bottom: 20px;
 }
 
 .pf2>p {
