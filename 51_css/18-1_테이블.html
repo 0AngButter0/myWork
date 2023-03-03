@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        a {
+            text-decoration:none; color:#000;
+        }
+        a:hover {text-decoration: underline;}
+        h2, p {text-align: center;}
+        table, th, td {
+            border:1px solid #999;
+            border-bottom: 1px solid #999;
+        }
+        div {
+            max-width:1280px;
+            margin:0 auto;
+        }
+        .faq {
+            /* max-width 아무리 커져도 뒤에 맥스가 붙은만큼 정해준 사이즈이상으로 커지지 않는다. */
+            width:100%;
+            border-collapse: collapse;
+            border-top-width:4px;
+        }
+        caption {
+            display:none;
+        }
+        /* 반응형으로 만들기 위해서 px을 %로 단위를 써야한다. 
+        계산법은 총 픽셀 단위 합을 구하고 차지하고 있는 단위에 총합을 나누고 100을 곱한다.*/
+        col:nth-of-type(1) {width:7%;}
+        col:nth-of-type(2) {width:58%;}
+        col:nth-of-type(3) {width:15%;}
+        col:nth-of-type(4) {width:10%;}
+        col:nth-of-type(5) {width:10%;}
+        th {
+            height:54px;
+        }
+        td {
+            height:52px;
+            text-align:center;
+        }
+        td:nth-child(2) {
+            text-align:left;
+        }
+    </style>
+</head>
+<body>  
+    <h1>테이블: 7*5(7행 5열)</h1>
+    <h2>자주하는 질문</h2>
+    <p>궁금하신 내용을 검색해 주세요.</p>
+    <div>
+        <table class="faq">
+            <caption>자주하는 질문</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">글쓴이</th>
+                    <th scope="col">날짜</th>
+                    <th scope="col">조회</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>공지</td>
+                    <td><a href="#">[고객센터] 9월 1일부터 인상되는 디저트 가격이 어떻게 되나요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2022-08-30</td>
+                    <td>2947</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="#">[고객센터] 9월 2일부터 인상되는 디저트 가격이 어떻게 되나요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2022-9-30</td>
+                    <td>1947</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="#">[고객센터] 9월 3일부터 인상되는 디저트 가격이 어떻게 되나요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2022-10-30</td>
+                    <td>947</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="#">[고객센터] 9월 4일부터 인상되는 디저트 가격이 어떻게 되나요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2022-11-30</td>
+                    <td>297</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="#">[고객센터] 9월 5일부터 인상되는 디저트 가격이 어떻게 되나요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2022-12-30</td>
+                    <td>1647</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="#">[고객센터] 9월 6일부터 인상되는 디저트 가격이 어떻게 되나요?</a></td>
+                    <td>메가MGC커피</td>
+                    <td>2023-01-30</td>
+                    <td>764</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
