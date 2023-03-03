@@ -1,0 +1,45 @@
+스타일가이드
+
+글꼴: 한글:noto sans KR(100, 400, 700)
+
+body	15px, #000, 줄간격 22.5px	
+
+h1	36px/4px/54px, #ffffff/#000000
+h3	24px/36px #000000
+
+a	15px,#fff
+a:hover	15px,#ccc
+
+button			15px,#000
+
+span	자간10px
+span	36px,#000
+
+adress	15px,#ccc
+
+컬러
+#000		본문글자색
+#fff		글자색
+#fff		메뉴 기본색
+#ccc		메뉴 호버시
+#fff		로고 글자 색:60계
+#000		로고 글자 색:맛있는 치킨
+#ccc		이름, 이메일, 제목, 내용 박스 색(input)
+#000		푸터 배경색
+#fff		바디 배경색
+
+버튼
+#f1f1f1		보내기 버튼
+#cccccc		보내기 버튼:hover
+#000		메세지 보내기
+#ccc		메세지 보내기:hover
+
+섹션 나누는 중간 선
+#f1f1f1
+
+이미지	100%
+	
+
+
+
+
