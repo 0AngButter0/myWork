@@ -1,4 +1,4 @@
-@charset "utf-8";
+22                                  @charset "utf-8";
 
 /* 초기화 */
 * {
@@ -42,9 +42,6 @@ button {
     cursor: pointer;
 }
 
-address {
-    font-style: normal;
-}
 
 .clearfix::after {
     content: '';
