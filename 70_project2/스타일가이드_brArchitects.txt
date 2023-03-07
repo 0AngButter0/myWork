@@ -1,0 +1,47 @@
+타이포 시스템
+
+body	15px, #777, 줄간격1.8
+
+h1	24px, #ffffff, 자간10px	로고
+h2	36px, #fff, 자간10px	PORTFOLIO, CONTACT
+h3	24px, #777		ABOUT ME, MY WORK, WHERE I WORK
+h4	18px, #777		Im really good at:
+
+a	15px, #777777
+a:hover	15px, #000000 
+
+button		15px, #000
+button		15px, #fff 
+button:hover	15px, #000
+
+span	자간10px			Photoshop, Illustrator, HTML+CSS, JavaScript
+span	24px, #fff			55+
+address	18px, #777, 줄간격1.8	인천 광역시 남동구
+
+
+컬러 시스템
+#616161		스킬바(90%=846, 85%=799, 75%=705), 프로필 정보바
+#f1f1f1		스킬바(100%)
+#404040		로고바
+#cccccc		메뉴:hover
+#777777		본문 글자색
+#ffffff		글자색
+#000000		글자색
+#616161		푸터 배경색
+
+버튼
+#f1f1f1(bg), #000000(color)	 LOAD MORE 버튼		138*45
+#000000			SEND MESSAGE 버튼	160*45
+#ffffff(bg), #616161(color)	To the top 버튼		130*45
+#CCCCCC			버튼:hover
+
+폼
+#CCCCCC(선) 	input	292*45, 600*45
+
+
+이미지
+ 
+
+
+
+
