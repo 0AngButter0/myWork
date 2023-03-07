@@ -1,26 +1,27 @@
-타이포 시스템
+타이포 시스템(Typography)
 
-body	15px, #777, 줄간격1.8
+제목 폰트		Segoe UI
+본문 폰트		Verdana
 
-h1	24px, #ffffff, 자간10px	로고
-h2	36px, #fff, 자간10px	PORTFOLIO, CONTACT
-h3	24px, #777		ABOUT ME, MY WORK, WHERE I WORK
-h4	18px, #777		Im really good at:
+h1	36px, #fff, 자간(letter-spacing)4px	섹션1의 메인타이틀
+h2	24px				섹션2,3,4의 제목
+h3	18px				섹션3의 하위 제목
 
-a	15px, #777777
-a:hover	15px, #000000 
+.logo	15px, #000, 자간(letter-spacing)4px	로고
+a	15px, #000, 자간(letter-spacing)4px	GNB(글로벌 네비게이션 바)
+.copy	#fff				저작권(Copyright)
 
-button		15px, #000
-button		15px, #fff 
-button:hover	15px, #000
+body	15px, #000, 줄간격(line-height)1.5
 
-span	자간10px			Photoshop, Illustrator, HTML+CSS, JavaScript
-span	24px, #fff			55+
-address	18px, #777, 줄간격1.8	인천 광역시 남동구
+
+button		#000, bg:#f1f1f1	CONTACT
+button:hover	#000, bg:#ccc
+button		#fff, bg:#000		SEND MESSAGE
+button:hover	#000, bg:#ccc
+
 
 
 컬러 시스템
-#616161		스킬바(90%=846, 85%=799, 75%=705), 프로필 정보바
 #f1f1f1		스킬바(100%)
 #404040		로고바
 #cccccc		메뉴:hover
