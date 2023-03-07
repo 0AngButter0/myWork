@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            width:100px;
+            height:100px;
+            margin:10px;
+            background:red;
+            transition: 1s;
+            /* float:left; */
+        }
+        div:hover {
+            width:300px;
+        }
+        /* 느린 시작과 끝 */
+        .trs1 {transition-timing-function:ease;}
+        /* 느리게 시작, 점점 빠르게 */
+        .trs1 {transition-timing-function:ease-in;}
+        /* 빠르게 시작, 점점 느리게 */
+        .trs1 {transition-timing-function:ease-out;}
+        /* 느린 시작과 끝(ease와 같은 개념이지만 cubic-bezier의 값이 다르다.) */
+        .trs1 {transition-timing-function:ease-in-out;}
+        /* 등속(속도가 일정) */
+        .trs1 {transition-timing-function:linear;}
+
+        /* 함수이름(인수1, 인수2, ...) */
+        /* linear-gradient(색1, 색2, ...) */
+        /* url(경로/이미지명) */
+        /* cubic-bezier(n,n,n,n) */
+        .trs1 {transition-timing-function:cubic-bezier(1,.01,1,.07);}
+    </style>
+</head>
+<body>
+    <h1>전환</h1>
+    <div class="trs1">ease</div>
+    <div class="trs2">ease-in</div>
+    <div class="trs3">ease-out</div>
+    <div class="trs4">ease-in-out</div>
+    <div class="trs5">linear</div>
+    <div class="trs6">Cubic-bezier</div>
+</body>
+</html>

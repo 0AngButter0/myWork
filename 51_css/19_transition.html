@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            width:100px;
+            height:100px;
+            background:red;
+            /* 호버에 적는게 아니라 호버할 태그에 적어야지 둘다 적용된다.(호버에 써도 된다. 둘 다 가능) */
+            /* 3초 전환(transition: 3s;) s(초)  */
+            /* 뒤에 프로퍼티가 들어가면 어디를 전환할지 정한다.(전환 속성) */
+            /* 안쓰면 all이다. */
+            transition-property: width;
+            /* 커서를 가져다 대면 색이 바뀌는 시간 (전환시간) */
+            /* .3s : 0.3이고 0은 생략된다. 속성을 쓰지 않으면 기본값 0 (듀레이션이 0이면 전환되지 않는다. 전환효과의 필수 값이다.) */
+            /* 생략불가능 */
+            transition-duration: .3s;
+            /* 가속도의 개념(easing) */
+            /* 기본값은 ease */
+            transition-timing-function: ease-in-out;
+            /* 커서를 가져다 대면 2초후에 바뀌기 시작한다. (지연시간) */
+            transition-delay: 2s;
+
+            transition: all .3s ease 0s;
+        }
+        div:hover {
+            width:200px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>전환</h1>
+    <div>
+        
+    </div>
+</body>
+</html>

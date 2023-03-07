@@ -1,0 +1,50 @@
+22                                  @charset "utf-8";
+
+/* 초기화 */
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* 텍스트 데코레이션으로 밑줄을 없앴다. */
+a {
+    text-decoration: none
+}
+
+img {
+    /* 박스사이즈에 맞추기 위해 */
+    width: 100%;
+    /* 위아래 간격이 벌어지지 않게 */
+    vertical-align: top;
+}
+
+button {
+    border:none;
+    /* 커서에 가져다 대면 손가락 모양이 나타남 */
+    cursor: pointer;
+}
+
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
