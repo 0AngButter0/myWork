@@ -30,8 +30,57 @@ body {
     font: 1.5rem/1.5 verdana, sans-serif;
     color: #000;
 }
+h1 {
+    /* section1 - Main Title */
+    font-size:36px;
+    color:#fff;
+    letter-spacing: 4px;
+}
+h2 {
+    /* section2,3,4 - Title */
+    font-size:24px;
+}
+h3 {
+    /* section3 - Sub Title */
+    font-size: 18px;
+}
+.logo {
+    font-size :15px;
+    color:#000;
+}
+a {
+    color:#000;
+}
+nav a {
+    letter-spacing: 4px;
+}
+.copy {
+    color:#fff;
+}
+/* ------------------------------------------------------------------ */
+/*------------------------------ header ------------------------------*/
+header {
+    /* fixed와 absolute로 지정하면 width가 콘텐츠 크기로 지정된다.  */
+    /* 네비게이션 바를 상단에 고정하기위해 fixed를 써야한다. */
+    position: fixed;
+    top:0px;
+    width:100%;
+    background: #fff;
+    /* 자식이 플로트 속성이면 부모속성은 자리를 가지지 못하기 때문에 오버플로우 처리해주면 해결된다. */
+    overflow:hidden;
+    /* box-shadow: x위치 y위치 흐림 퍼짐 색, ....; */
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),  0 2px 5px 0 rgba(0,0,0,0.12);
+}
+.logo {
+    float: left;
+}
+nav {
+    float: right;
+}
+nav li {
+    float:left;
+}
 
-/* 헤더 */
 /* 섹션1 */
 /* 섹션2 */
 /* 섹션3 */
