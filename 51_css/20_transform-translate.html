@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        .wrap {
+            margin:20px;
+            border:1px solid black;
+            /* 원근감을 부모/자식에 따라 커지는 중심 위치가 달라진다. */
+            /* perspective:1000px; */
+        }
+        .trf {
+            display:inline-block;
+            width:100px;
+            height:100px;
+            background: rebeccapurple;
+            transition: .10s;
+        }
+        /* .wrap에 마우스를 올리면 자식 .trsfx를 오른쪽으로 100px 이동 */
+        .wrap:hover .trftx {
+            /* transform: translateX(x); */
+            transform: translateX(100px);
+        }
+        .wrap:hover .trfty {
+            /* transform: translateY(y); */
+            transform: translateY(100px);
+        }
+        .trftz {
+            transform: perspective(1000px) translateZ(0px);
+        }
+        .wrap:hover .trftz {
+            /* 원근감(perspective)과 함께 사용해야 한다. */
+            /* transform: translateZ(z); */
+            transform: perspective(1000px) translateZ(100px); 
+        }
+        .wrap:hover .trftd {
+            /* transform: translate3d(x,y,z); 반드시 3d는 값을 다 써줘야 한다. */
+            transform: perspective(1000px) translate3d(100px,100px,100px);
+        }
+        .wrap:hover .trft {
+            /* transform: translate(x[, y]); */
+            transform: translate(100px, 100px);
+        }
+
+        /* --------------------------------------------------------------------------------- */
+
+        .move {
+            width:200px;
+            background: yellow;
+            overflow: hidden;
+            padding: 10px 20px;
+        }
+        .move .bg {
+            float:left;
+            transition: .5s ease-out;
+            transform: translateY(20px);
+        }
+        .move:hover .bg {
+            transform: translateY(0px);
+        }
+        .move .txt {
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <h1>변환</h1>
+    <h2>이동(move)</h2>
+    <div class="wrap">
+        <span class="trf trftx">translateX</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trfty">translateY</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trftz">translateZ</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trftd">translate3d</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trft">translate</span>transform
+    </div>
+    <hr>
+    <div class="move">
+        <div class="bg"><img src="assets/inthree/main-visual-dot-01.png" alt="01"></div>
+        <div class="txt">
+            <h3>가이드맵</h3>
+            <p>서울랜드를 한눈에<br> 둘러보세요!</p>
+        </div>
+    </div>
+</body>
+</html>
