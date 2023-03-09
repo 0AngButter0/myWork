@@ -9,8 +9,9 @@
         .wrap {
             margin:20px;
             border:1px solid black;
-            /* 원근감을 부모/자식에 따라 커지는 중심 위치가 달라진다. */
-            /* perspective:1000px; */
+            /* 원근감을 줄 때, 부모/자식에 따라 커지는 중심 위치가 달라진다. 
+            scale은 보통 부모에 준다.*/
+            perspective:1000px;
         }
         .trf {
             display:inline-block;
@@ -20,52 +21,35 @@
             transition: .10s;
         }
         /* .wrap에 마우스를 올리면 자식 .trsfx를 오른쪽으로 100px 이동 */
-        .wrap:hover .trftx {
+        .wrap:hover .trfscx {
             /* transform: scaleX(w); 배수 */
             transform: scaleX(2);
         }
-        .wrap:hover .trfty {
+        .wrap:hover .trfscy {
             /* transform: scaleY(h); */
             transform: scaleY(1.2);
         }
-        .trftz {
-            transform: perspective(1000px) scaleZ(1) translateZ(0px);
+        .trftscz {
+            transform: scaleZ(1) translateZ(0px);
         }
-        .wrap:hover .trftz {
-            /* 원근감(perspective), translate와 함께 사용해야 한다. */
-            /* transform: scaleZ(숫자); */
-            transform: perspective(1000px) scaleZ(2) translateZ(100px); 
+        .wrap:hover .trfscz {
+            /* 원근감(perspective), translate와 함께 사용해야 한다. 중요! */
+            /* transform: 값1 값2 ....; */
+            transform: scaleZ(1.2) translateZ(100px); 
         }
-        .wrap:hover .trftd {
+        .trfsc3d {
+            transform: scale3d(1,1,1) translateZ(0px);
+        }
+        .wrap:hover .trfsc3d {
             /* transform: scale3d(숫자,숫자,숫자); 반드시 3d는 값을 다 써줘야 한다. */
-            transform: perspective(1000px) scale3d(1.2,1.2,1.2);
+            transform: scale3d(1.2,1.2,1.2) translateZ(100px);
         }
-        .wrap:hover .trft {
+        .wrap:hover .trfsc {
             /* transform: scale(w[, h]); */
             /* translate는 하나의 인수만 쓸 경우 좌우 방향 이동 */
             /* scale는 하나의 인수만 쓸 경우 가로/세로 비율 유지 크기 변경 */
             /* transform: scale(1.2, 1.2); */
             transform: scale(1.2);
-        }
-
-        /* --------------------------------------------------------------------------------- */
-
-        .move {
-            width:200px;
-            background: yellow;
-            overflow: hidden;
-            padding: 10px 20px;
-        }
-        .move .bg {
-            float:left;
-            transition: .5s ease-out;
-            transform: scaleY(20px);
-        }
-        .move:hover .bg {
-            transform: scaleY(0px);
-        }
-        .move .txt {
-            float:right;
         }
     </style>
 </head>
@@ -73,27 +57,19 @@
     <h1>변환</h1>
     <h2>이동(move)</h2>
     <div class="wrap">
-        <span class="trf trftx">scaleX</span>transform
+        <span class="trf trfscx">scaleX</span>transform
     </div>
     <div class="wrap">
-        <span class="trf trfty">scaleY</span>transform
+        <span class="trf trfscy">scaleY</span>transform
     </div>
     <div class="wrap">
-        <span class="trf trftz">scaleZ</span>transform
+        <span class="trf trfscz">scaleZ</span>transform
     </div>
     <div class="wrap">
-        <span class="trf trftd">scale3d</span>transform
+        <span class="trf trfsc3d">scale3d</span>transform
     </div>
     <div class="wrap">
-        <span class="trf trft">scale</span>transform
-    </div>
-    <hr>
-    <div class="move">
-        <div class="bg"><img src="assets/inthree/main-visual-dot-01.png" alt="01"></div>
-        <div class="txt">
-            <h3>가이드맵</h3>
-            <p>서울랜드를 한눈에<br> 둘러보세요!</p>
-        </div>
+        <span class="trf trfsc">scale</span>transform
     </div>
 </body>
 </html>

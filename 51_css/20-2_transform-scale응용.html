@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+        @import url('https://cdn.jsdelivr.net/npm/futura-font@1.0.0/styles.min.css');
+        /* test (외곽사이즈 확인용) */
+        /* body * {outline: 1px solid lime;} */
+
+        /* reset(초기값) */
+        * {
+            /* 패딩사이즈만큼 박스가 커지지 않게 해준다. 중요! */
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        html {
+            font-size:10px;
+        }
+        body {
+            font: 1.5rem/1.6 'NanumSquare', sans-serif;
+        }
+        h3 {
+            font-size:2.2rem;
+            font-weight: 700;
+            color: #333;
+        }
+        
+
+        .wrap {
+            width: 340px;
+            background: #e2dfde;
+            
+        }
+        .wrap .thumb {
+            height:265px;
+            overflow:hidden;
+        }
+        .wrap img {
+            transition: .7s;
+        }
+
+        .wrap:hover img {
+            /* width만 사용 시 가로가 커지면 세로도 같은 비율로 커진다. */
+            /* width: 120%; */
+            transform: scale(1.2);
+        }
+
+        .info {
+            /* 포지션 앱솔루트의 부모가 되기 위해 자기 자신을 기준으로 정하는 포지션 렐러티브를 써줬다. */
+            position:relative;
+            /* 상 좌우 하 */
+            padding:45px 45px 65px;
+            /* background-image: url(경로/이미지명);
+            background-repeat: 반복; 
+            background-position: x위치 y위치;
+            background-size: 크기;
+            background-attachment: 고정; */
+            /* background:url(경로/이미지명) 반복 x위치 y위치[/크기] 고정; */ /* calc(컬크레이트/계산기) */
+            background:url(assets/honorsville/ico_favorit_off.png) no-repeat calc(100% - 20px) 20px;
+        }
+        .flag {
+            position:absolute;
+            /* static이 아닌 포지션을 지정한 조상(부모)을 기준으로 한다. */
+            top:0px;
+            background: #0f2244;
+            color:#fff;
+            line-height:1;
+            padding:12px 16px;
+        }
+        .addr {
+            color: #9a8b86;
+            margin: 40px 0;
+        }
+        .tel {
+            font-size:2.4rem;
+            color: #0f2244;
+            font-weight: 400;
+            font-family:FuturaBT-Medium;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>크기 조절</h1>
+    <h2>경남아너스빌</h2>
+    <div class="wrap">
+        <a href="https://www.honorsville.co.kr/estate/sale/view?parcel_id=81">
+            <div class="thumb">
+                <img src="assets/honorsville/20220511_1124.jpg" alt="아파트단지">
+            </div>
+            <div class="info">
+                <span class="flag">분양중</span>
+                <a href="#"></a>
+                <h3>옥동 경남아너스빌 ubc</h3>
+                <p class="addr">울산광역시 남두 옥동651-2번지 일원<br>총 320세대</p>
+                <p class="tel">052)268-5550</p>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>
