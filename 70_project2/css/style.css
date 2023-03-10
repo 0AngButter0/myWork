@@ -93,7 +93,24 @@ nav li {
     float:left;
 }
 
-/* 섹션1 */
+
+/* section1 */
+#section1 div {
+    position: relative;
+    /* 부트스트랩ver.5 그리드 시스템으로 계산하는 시스템이 있다. */
+    /* 12col * 109 * +11 * 16 = 1484 */
+    width:1484px;
+    /* 블록레벨요소의 가로 가운데 배치 */
+    margin:0 auto;
+}
+.mainTit {
+    z-index:1;
+    position:absolute;
+    top:50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
 /* 섹션2 */
 /* 섹션3 */
 /* 섹션4 */

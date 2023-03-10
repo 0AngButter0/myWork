@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+        .wrap {
+            /* relative 기준을 자기 자신으로 정한다. */
+            position: relative;
+            width:110px;
+            height:110px;
+            border-radius:50%;
+            overflow: hidden;
+            perspective: 800px;
+        }
+        .wrap > div {
+            position:absolute;
+        }
+        /* 0에서 180으로 */
+        .wrap:hover .front {
+            transform: rotateY(180deg);
+        }
+        /* -180에서 0으로 */
+        .wrap:hover .back {
+            transform: rotateY(0deg);
+        }
+        .front {
+            border-radius: 50%;
+            transition: .7s;
+            background: #ccc;
+            /* 뒷면을 숨기는 기능 */
+            backface-visibility: hidden;
+        }
+        .back {
+            border-radius: 50%;
+            transition: .7s;
+            width:100%;
+            height:100%;
+            background: #5bae2a;
+            transform: rotateY(-180deg);
+        }
+        span {
+            position:absolute;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+             /* 가로 가운데 배치(이렇게 써야지 가로 가운데 배치 가능) */
+            left:50%;transform: translateX(-50%);
+        }
+        .front span {
+            color: #333;
+            bottom:15px;
+            font-size:24px;
+        }
+        .back span  {
+            color: #fff;
+            font-size:28px;
+            /* 세로 가운데 배치 */
+            top:50%; transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>회전</h1>
+    <h2>팜한농</h2>
+    <div class="wrap">
+        <div class="back">
+            <span>사과</span>
+        </div>
+        <div class="front">
+            <div><img src="assets/Farmhannong/icon_farming_02.png" alt="사과"></div>
+            <span>사과</span>
+        </div>
+    </div>
+</body>
+</html>
