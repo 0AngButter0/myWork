@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
+        .container {
+            overflow:hidden;
+        }
         .wrap {
+            float:left;
             margin:20px;
             border:1px solid black;
             /* 원근감을 줄 때, 부모/자식에 따라 커지는 중심 위치가 달라진다. 
@@ -39,7 +43,7 @@
         .wrap:hover .trfr {
             /* transform: rotate(각도angle); */
             /* transform: rotate(숫자deg); */
-            transform: rotate(90deg);
+            transform: rotate(45deg);
         }
         .wrap .trfro { 
             /* 오리진을 쓰면 회전하는 중심점을 바꿀 수 있다. */
@@ -57,31 +61,82 @@
             perspective: 10000px;
             perspective-origin: right bottom;
         }
+
+        .trfo1 {
+            /* transform-origin: center center; */
+            transform-origin: 50% 50%;
+        }
+        .trfo2 {
+            /* transform-origin: left top; */
+            transform-origin: 0 0;
+        }
+        .trfo3 {
+            /* transform-origin: x축 y축; */
+            /* transform-origin: right top; */
+            /* transform-origin: top right; */
+            transform-origin: 100% 0;
+        }
+        .trfo4 {
+            /* transform-origin: right bottom; */
+            transform-origin: 100% 100%;
+        }
+        .trfo5 {
+            /* transform-origin: left bottom; */
+            transform-origin: 0 100%;
+        }
+        .trfo6 {
+            /* width:100px height:100px; 이면 px나 %나 같아진다. (width/height값에 따라 달라진다.) */
+            transform-origin: 20% 30%;
+            transform-origin: 20px 30px;
+        }
     </style>
 </head>
 <body>
     <h1>회전</h1>
     <h2>회전(rotate)</h2>
-    <div class="wrap">
-        <span class="trf trfrx">rotateX</span>transform
+    <div class="container">
+        <div class="wrap">
+            <span class="trf trfrx">rotateX</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfry">rotateY</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfrz">rotateZ</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr3d">rotate3d</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfro">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfro">rotate</span>transform
+        </div>
     </div>
-    <div class="wrap">
-        <span class="trf trfry">rotateY</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfrz">rotateZ</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfr3d">rotate3d</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfr">rotate</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfro">rotate</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfro">rotate</span>transform
+    <hr>
+    <div class="container">
+        <div class="wrap">
+            <span class="trf trfr trfo1">rotate center center</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo2">rotate left top</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo3">rotate top right</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo4">rotate right bottom</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo5">rotate left bottom</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo6">rotate 임의의 값</span>transform
+        </div>
     </div>
 </body>
 </html>
