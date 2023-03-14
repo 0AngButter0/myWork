@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        div {
+            position:relative;
+            width:100px;
+            height:100px;
+            background: rgb(70, 248, 180);
+            /* margin-left:100px; */
+            /* transform:translateX(100px); */
+            margin:20px;
+            left:0px; top:0px;
+        }
+        .anim1 {
+            animation-name: move;
+            /* animation-duration을 설정해야 애니메이션이 작동한다. */
+            animation-duration: .5s;
+            /* 무한 반복가능. 횟수를 쓰면 횟수만큼만 반복 */
+            animation-iteration-count: infinite;
+            /* 왔다갔다 하게 해준다. */
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+
+            /* 속기속성으로 한줄 가능 */
+            /* animation: move 3s infinite alternate linear 2s; */
+        }
+
+        /* @keyframes identifire(지정한 애니메이션 네임) {} */
+        @keyframes move {
+            /* from {top:0;}
+            to {top:100px;} */
+            0% {left:0px; top:0;}
+            25% {left:200px; top:0;}
+            50% {left:200px; top:100px;}
+            70% {left:0px; top:100px;}
+            100% {left:0px; top:0px;}
+        }
+
+        .anim {
+            animation-name: move2;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            background: red;
+            left:0;
+        }
+        @keyframes move2 {
+            0% {left:100px; background: blue;}
+            100% {left:300px; background: lime;}
+        }
+        /* 시작(지연) -> 0% -> 100% -> 시작  (none: 아무것도 지정되지 않는다.) */
+        .anim2 {animation-fill-mode: none;}
+        /* 시작(지연) -> 0% -> 100% (forwards: 마지막 키프레임 상태 유지) */
+        .anim3 {animation-fill-mode: forwards;}
+        /* 시작(스킵) -> 0%(지연) -> 100% -> 시작 (backwards: 첫 번재 키프레임의 상태를 미리 적용) */
+        .anim4 {animation-fill-mode: backwards;}
+        /* 시작(스킵) -> 0%(지연) -> 100% (both: 첫 번째 키프레임 상태를 미리 적용하면서 마지막 키프레임 상태 유지) */
+        .anim5 {animation-fill-mode: both;}
+        
+        .wrap {
+            width:300px;
+            border:1px solid red;
+            /* transparent: 투명하게 */
+            background: transparent;
+        }
+        .wrap:hover .anim6 {
+            animation-play-state: paused;
+        }
+        .anim6 {
+            animation: rotate 1s infinite linear;
+        }
+        @keyframes rotate {
+            0% {transform: rotate(0);}
+            100% {transform: rotate(360deg)}
+        }
+    </style>
+</head>
+<body>
+    <h1>애니메이션</h1>
+    <div class="anim1">박스</div>
+    <hr>
+    <h2>animation-fill-mode</h2>
+    <div class="anim anim2">none</div>
+    <div class="anim anim3">forwards</div>
+    <div class="anim anim4">backwards</div>
+    <div class="anim anim5">both</div>
+    <hr>
+    <h2>animation-play-state</h2>
+    <div class="wrap">
+        <div class="anim6">infinite</div>
+    </div>
+</body>
+</html>
