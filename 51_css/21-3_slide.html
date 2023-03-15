@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* reset */
+        * {box-sizing: border-box;}
+        body, ul {margin:0; padding:0;}
+        ul {list-style:none;}
+        img {width:100%; vertical-align:top;}
+
+        /* slide */
+        .slide {
+            position: relative;
+            width:1200px;
+            height:300px;
+            overflow:hidden;
+        }
+        .slide ul {
+            position:absolute;
+            left:0;
+            top:0;
+            width:400%;
+            height:100%;
+            animation: slide 9s infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>좌우 슬라이드</h1>
+    <div class="slide">
+        <ul>
+            <!-- 끝에 첫번째 이미지가 다시 들어가야지 부드럽게 돌아간다. -->
+            <li><img src="assets/samyangfood/slide2.jpg" alt="">붉닭</li>
+            <li><img src="assets/samyangfood/slide4.jpg" alt="">짜파</li>
+            <li><img src="assets/samyangfood/slide6.jpg" alt="">삼양</li>
+            <li><img src="assets/samyangfood/slide2.jpg" alt="">붉닭</li>
+        </ul>
+    </div>
+</body>
+
+</html>

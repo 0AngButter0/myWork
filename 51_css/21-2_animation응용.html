@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        body {background: skyblue;}
+
+        .text2 {
+            /* 스프라이트 이미지: 390 * 5880 */
+            /* 5880 / 35장 = 168 */
+            /* 한 장의 이미지:390 * 168 */
+            width:390px;
+            height:168px;
+            text-indent: -9999em;
+            background: url(assets/ht/text.png) no-repeat;
+            background-position: 0 0;
+            animation: text 3s steps(34) forwards;
+                }
+        @keyframes text {
+            0% {background-position: 0 0;}
+            100% {background-position: 0 -5712px;}
+        }
+        .ball2 {
+            /* 스프라이트 이미지: 738 * 123 */
+            /* 738 / 6장 = 123 */
+            /* 한 장의 이미지:123 * 123 */
+            width:123px;
+            height:123px;
+            text-indent: -9999em;
+            background: url(assets/ball.png) no-repeat;
+            background-position: 0 0;
+            animation: ball 3s steps(5) forwards;
+                }
+        @keyframes ball {
+            0% {background-position: 0 0;}
+            100% {background-position: -615px 0;}
+        }
+
+        .bee2 {
+            /* 스프라이트 이미지: 187 * 5610 */
+            /* 5610 / 30장 = 187 */
+            /* 한 장의 이미지:282 * 187 */
+            width:282px;
+            height:187px;
+            text-indent: -9999em;
+            background: url(assets/ht/bee.png) no-repeat;
+            background-position: 0 0;
+            animation: text 3s steps(29) infinite;
+                }
+        @keyframes text {
+            0% {background-position: 0 0;}
+            100% {background-position: 0 -5423px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>애니메이션</h1>
+    <h2>해태제과</h2>
+    <div class="wrap">
+        <div class="text">
+            <img src="assets/text.gif" alt="text">
+        </div>
+        <div class="text2">달콤한 세상으로의 초대</div>
+    </div>
+    <div class="ball">
+        <img src="assets/공튀기기.gif" alt="text">
+    </div>
+    <div class="ball2">공튀기기</div>
+    <hr>
+    <div class="bee">
+        <img src="assets/beee2.gif" alt="">
+    </div>
+    <div class="bee2">꿀벌</div>
+</body>
+
+</html>
