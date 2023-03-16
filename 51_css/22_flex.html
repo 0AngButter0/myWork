@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 
+        플렉스박스
+        부모: 플렉스 컨테이너
+                display:flex;
+        자식: 플렉스 아이템
+        */
+        * {box-sizing: border-box;}
+        .container {
+            display:flex;
+            /* column 세로배치   row 가로배치 */
+            flex-direction:row;
+            /* flex-wrap:nowrap; 기본값으로 줄바꿈 안함 */
+            /* flex-wrap:wrap; 줄바꿈 가능 */
+            flex-wrap:wrap;
+            width:448px;
+            /* outline은 박스사이징에 영향 받지 않는다. */
+            outline:1px solid red
+        }
+        .container div {
+            /* float:left; */
+            width:100px;
+            height:100px;
+            background-color:grey;
+        }
+        .container div:not(:nth-of-type(4), :nth-of-type(8)) {
+            margin-right:16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>flexible(플렉서블)</h1>
+    <!-- 부모는 플랙스 컨테이너 -->
+    <div class="container">
+        <!-- 자식은 플렉스 아이템 -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <p>나는 단락이다.</p>
+</body>
+</html>
