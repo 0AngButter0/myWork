@@ -41,7 +41,9 @@ h1 {
 }
 h2 {
     /* section2,3,4 - Title */
-    font-size:24px;
+    font-size:36px;
+    color:#fff;
+    letter-spacing: 4px;
 }
 h3 {
     /* section3 - Sub Title */
