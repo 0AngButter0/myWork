@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+    <!-- 스크립트를 앞에 그냥 쓰면 css와 다르게 작동하지 않는다. 그래서 보통은 바디의 맨 밑에 써주는게 좋다. -->
+    <!-- 외부 스크립트 -->
+    <!-- <script src="script.js"></script> -->
+    <!-- 내부 스크립트 -->
+    <script>
+        // 스크립트 한 줄 주석
+        /*
+        Alt+Shift+A
+        한 줄 이상 주석
+         */
+    </script>
+</head>
+
+<body>
+    <h1>어디에?</h1>
+    <ul>
+        <!-- 인라인 스크립트(인라인은 쓰지 말것, 알아만 둘것) -->
+        <li onclick="this.style.color='red';">인라인</li>
+        <li class="blue">내부</li>
+        <li class="green">외부</li>
+    </ul>
+
+
+
+    <!-- 외부 스크립트 -->
+    <script src="script.js"></script>
+    <!-- 내부 스크립트 -->
+    <script>
+        // 스크립트 한 줄 주석
+        /*
+        Alt+Shift+A
+        한 줄 이상 주석
+        */
+        // document.getElementById('second').style.color='blue';
+
+        const blue = document.querySelector('.blue');
+        blue.onclick = blueFn;
+
+        function blueFn() {
+            blue.style.color = 'blue';
+        }
+    </script>
+</body>
+
+</html>
