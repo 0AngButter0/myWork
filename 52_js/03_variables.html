@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+</head>
+
+<body>
+    <h1>변수</h1>
+
+    <script>
+        // 변수 선언
+        var birthYear1;
+        let birthYear2;
+
+        // let birthYear;
+        // birthYear1 변수에 1995를 할당한다.
+        // birthYear2 변수에 2000를 할당한다.
+        // = 오른쪽 데이터를 왼쪽에 넣는다.
+        // ==, === 이 같다 라는 표현.
+        birthYear1 = 1995;
+        birthYear2 = 2000;
+
+        // 데이터가 올바른지 확인 할때 console을 사용해 개발자 모드로 확인한다.
+        // console.log(birthYear);
+
+        // let과 const는 재선언할 수 없다. var은 가능
+        //  선언과 할당
+        var birthYear1;
+        // const는 선언과 할당을 함께 해야한다.
+        // const birthYear2 = 2000; -> 에러
+        // let birthYear3 = 1995; - > 에러
+
+        // const는 재할당할 수 없다.
+        birthYear1 = 1900;
+        birthYear2 = 1901;
+        // birthYear3 = 1902; - > error
+
+        // 전역변수
+        // 두개 이상의 변수를 ,로 구분하여 선언
+        var currentYear1, age1;
+        let currentYear2, age2;
+        const currentYear3 = 2023, age3 = 20;
+
+        // let과 const는 블록 변수로 블록이 다르면 재선언 가능
+        // 변수는 지역 변수와 전역 변수로 나뉜다.
+        function fn() {
+            // {}안에 있는 것을 지역 변수 (보통 함수에서 많이 쓴다.)
+            var currentYear1, age1;
+            let currentYear2, age2;
+            const currentYear3 = 1999, age3 = 24;
+        }
+
+    </script>
+</body>
+
+</html>

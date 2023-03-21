@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        .wrap1 {
+            margin-bottom:200px;
+        }
+        .container {
+            display: flex;
+            /* flex-direction: row; (row로 하면 기본값이라 없어도 된다.) */
+            outline:1px solid orange;
+        }
+
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+        }
+
+        /* 왼쪽맞춤 */
+        .jcs {justify-content: flex-start;}
+        /* 오른쪽맞춤 */
+        .jce {justify-content: flex-end;}
+        /* 가운대맞춤 */
+        .jcc {justify-content: center;}
+        /* 양 끝에 맞춰서 균일하게 정렬 */
+        .jcsb {justify-content: space-between;}
+        /* 좌우 margin을 준것과 같다. */
+        .jcsa {justify-content: space-around;}
+        /* 4개의 요소를 뺀 나머지 공간이 균일하게 떨어져 있다. */
+        .jcse {justify-content: space-evenly;}
+
+        /* 주축을 세로로 */
+        .wrap2 {
+            display:flex;
+        }
+        .wrap2 .container {
+            flex-direction: column;
+            height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flexible(플렉서블)</h1>
+    <div class="wrap1">
+        <h2>주축이 가로</h2>
+        <h3>flex-start</h3>
+        <div class="container jcs">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h3>end</h3>
+        <div class="container jce">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h3>center</h3>
+        <div class="container jcc">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h3>space-between</h3>
+        <div class="container jcsb">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h3>space-around</h3>
+        <div class="container jcsa">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <h3>space-evenly</h3>
+        <div class="container jcse">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </div>
+
+    <h2>주축이 세로</h2>
+    <div class="wrap2">
+        <div class="container jcs">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="container jce">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="container jcc">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="container jcsb">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="container jcsa">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div class="container jcse">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* reset */
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        /* contents */
+        .container {
+            display: flex;
+            /* flex-direction: row; (row로 하면 기본값이라 없어도 된다.) */
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 1484px;
+            /* 가운대 배치 */
+            margin:0 auto;
+        }
+
+        .container li {
+            width: 360px;
+            height: 240px;
+            margin-bottom:16px;
+            background-color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flexible(플렉서블)</h1>
+    <ul class="container">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+</body>
+
+</html>
