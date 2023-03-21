@@ -22,6 +22,8 @@
 
         // typeof(데이터) - 데이터의 타입을 표시
         var abc = 1000;
+        // 변수 선언 후 값을 지정하지 않으면 undefined(정의하지 않는다.)
+        var def;
 
         document.write(typeof('문자열') + '<br>');
         document.write(typeof('10') + '<br>');
@@ -31,9 +33,9 @@
         document.write(typeof(abc) + '<br>');
         document.write(typeof(10) + '<br>');
         document.write(typeof(true) + '<br>');
-        document.write(typeof(undefined) + '<br>');
+        document.write(typeof(def) + '<br>');
         // 배열[]
-        document.write(typeof([]) + '<br>');
+        document.write(typeof(['봄', '여름', '가을', '겨울']) + '<br>');
         // 객체{}
         document.write(typeof({}) + '<br>');
         document.write(typeof(null) + '<br>');
