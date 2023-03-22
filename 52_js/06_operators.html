@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JavaScript</title>
+</head>
+<body>
+    <h1>연산자</h1>
+    <h2>산술 연산자</h2>
+    <script>
+        /* 
+            연산자의 우선순의
+            1. 산술
+            2. 비교
+            3. 논리
+            4. 할당
+                * 왼쪽에서 오른쪽 방향으로 계산
+         */
+        // 변수의 이름 정의시 특수문자는 _와$
+        const _a = 15 + 2;
+        const $b = 15 - 2;
+        const c_ = 15 * 2;
+        const d$ = 15 / 2;
+        const e = 15 % 2;
+        const f = 15 ** 2;
+
+        // 출력
+        // +는 문자열 연결
+        // 변수를 ''또는 ""로 묶으면 문자열이 된다.
+        document.write(_a + '<br>');
+        document.write('_a');
+        document.write($b + '<br>');
+        document.write(c_ + '<br>');
+        document.write(d$ + '<br>');
+        document.write(e + '<br>');
+        document.write(f + '<br>');
+    </script>
+</body>
+</html>

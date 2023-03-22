@@ -17,12 +17,42 @@
             2. Number: 숫자
             3. 부울(Boolean): true 또는 false
             4. Undefined
-            5. 객체(Object): 배열(Array), 날짜(Date), 수학(Math), Null, ...
+            5. 객체(Object): 배열(Array), 날짜(Date), 수학(Math), 문자열(String), Null, ...
          */
+
+
+
+        /* 
+        피연산자의 개수:
+        단항: 피연산자가 1개
+            !피연산자
+            ++피연산자
+            --피연산자
+        이항: 피연산자가 2개
+            피연산자1 + 피연산자2
+            +, -, *, /, %, **, >, <, >=, <=, ==, ===, ...
+        삼항: 피연산자가 3개
+            피연산자1 ? 피연산자2 : 피연산자3
+            ? :
+         */
+
+        // Arithmetic(산술): +(더하기, 연결), -, *(곱하기, 반복), /(나누기), %(나머지), **(거듭제곱), ++(증가), --(감소)
+        
+        //  (중요)Composition(비교): >(초과), <(미만), >=(이상), <=(이하), ==(같다), ===(같다, 데이터의 유형 구분), !=(같지 않다), !==(같지 않다, 데이터의 유형 구분)
+        // Logical(논리): &&(그리고), ::(or, 또는), !(not, 아니다)
+        // 비교와 논리 연산의 결과는 true 또는 false 이다.
+        //비교와 논리연산은 제어문의 조건으로 사용된다.
+        
+        // Assigment(할당): =, +=, -=, *=, /=, %=, **=
+        
+        // Conditional(조건): ? :
+        // Type(유형): typeof, instanceof
+
 
         // typeof(데이터) - 데이터의 타입을 표시
         var abc = 1000;
         // 변수 선언 후 값을 지정하지 않으면 undefined(정의하지 않는다.)
+        // typeof(): 연산자
         var def;
 
         document.write(typeof('문자열') + '<br>');
@@ -41,6 +71,10 @@
         document.write(typeof(null) + '<br>');
         document.write(typeof(new Date()) + '<br>');
         document.write(typeof(Math.random()) + '<br>');
+
+
+        document.write(0.1+0.2 + '<br>');
+
     </script>
 </body>
 
