@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+</head>
+
+<body>
+    <h1>제어문</h1>
+    <h2>if</h2>
+    <script>
+
+        /* 
+            if (조건) {
+                실행 코드;
+            } 
+        */
+
+        // 비교, 논리 연산자를 사용하여 조건식을 만든다.
+
+        if (10 < 2) {
+            // 참일 경우 실행
+            document.write('참' + '<br>');
+        }
+
+        /* 
+            if ~ else
+
+            if (조건식) {
+                // 참일 경우 실행할 문장
+            } else {
+                // 거짓일 경우 실행할 문장
+            }
+
+        */
+
+        let a = 1;
+
+        if (a % 2 === 0) {
+            // 참일 경우 실행할 문장
+            document.write('여' + '<br>');
+        } else {
+            // 거짓일 경우 실행할 문장
+            document.write('남' + '<br>');
+        }
+
+        // 조건 연산자(? :)
+        //(조건식) ? 참일경우실행 : 거짓일경우실행;
+
+        (a % 2 === 0) ? document.write('여' + '<br>') : document.write('남' + '<br>');
+
+
+        /* 
+            if (조건식1) {
+                //실행 코드
+            } else if (조건식2) {
+                //실행 코드
+            } else if (조건식3) {
+                //실행 코드
+            } else if (조건식4) {
+                //실행 코드
+            } else {
+                //실행 코드
+            }
+        */
+
+        let jumsu = 91;
+        let result;
+
+        if (jumsu >= 90) {
+            //실행 코드
+            result = '수';
+            document.write(result + '<br>');
+        } else if (jumsu >= 80) {
+            //실행 코드
+            result = '우';
+            document.write(result + '<br>');
+        } else if (jumsu >= 70) {
+            //실행 코드
+            result = '미';
+            document.write(result + '<br>');
+        } else if (jumsu >= 60) {
+            //실행 코드
+            result = '양';
+            document.write(result + '<br>');
+        } else {
+            //실행 코드
+            result = '가';
+            document.write(result + '<br>');
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+/* ctrl+alt+좌우방향키 */
+@charset "utf-8";
+
+/* reset */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+li {
+    list-style: none;
+}
+body {
+    background: #fff;
+}
+
+/* typo */
+body {
+    color:#333;
+}
+a {
+    text-decoration: none;
+    color:#333;
+}
+
+/* 컨테이너 */
+.container {
+    display: flex;
+}
+/* 헤더 */
+header {
+    width: 200px;
+    height: 850px;
+    background: #111;
+}
+/* 로고 */
+/* 내비게이션 */
+/* 로그인/회원가입 */
+
+
+/* 콘텐츠 */
+.contents {
+    /* 연산자 좌우는 띄어쓰기한다. */
+    width: calc(100% - 200px);
+}
+
+/* 슬라이드 */
+.slide {
+    height: 400px;
+    background: #E86000;
+}
+/* 배너 */
+.banner {
+    height: 200px;
+    background: #B74182;
+}
+/* 공지사항/갤러리 */
+.tabs {
+    height: 250px;
+    background: #775090;
+}
+/* 바로가기 */
+
+/* 푸터 */
+footer {
+    height:100px;
+    background: #777;
+}
+/* 하단로고 */
+/* 주소/저작권 */
+/* SNS */
