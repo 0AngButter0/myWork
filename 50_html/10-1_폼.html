@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <h1>폼</h1>
+    <form action="member,.php">
+        <fieldset>
+
+            <!-- 목록상자 -->
+            <!-- fielset안에서만 legend사용 -->
+            <legend>회원가입</legend>
+            <label for="month">태어난 월 선택:</label>
+            <select name="month" id="month">
+                <!-- value는 서버로 전송될 값 -->
+                <option value>월</option>
+                <option value="01">1</option>
+                <option value="02">2</option>
+                <option value="03">3</option>
+            </select>
+        </fieldset>
+
+        <hr>
+
+        <!-- 목록상자 -->
+        <label for="month3">태어난 월 선택:</label>
+        <select name="month3" id="month3">
+            <!-- value는 서버로 전송될 값 -->
+            <optgroup label="봄">
+                <option value="03">3</option>
+                <option value="04">4</option>
+                <option value="05">5</option>
+            </optgroup>
+            <optgroup label="여름">
+                <option value="06">6</option>
+                <option value="07">7</option>
+                <option value="08">8</option>
+            </optgroup>
+        </select>
+
+        <hr>
+
+        <!-- 콤보상자 = 목록상자 + 입력상자 -->
+        <!-- 인풋태그 반드시 같이 씀 -->
+        <label for="month2">태어난 월 선택:</label>
+        <input type="text" name="month2" id="month2" list="months">
+        <datalist id="months">
+            <option value="월">월</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+        </datalist>
+
+        <hr>
+
+        <!-- cols="한줄에 나올 글자 수", rows="보이는 줄" -->
+        <!-- readonly속성을 넣으면 내용을 수정하지 못하게 할 수 있다. -->
+        <textarea name="" id="" cols="30" rows="4" readonly>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eveniet voluptatem neque, nostrum eligendi reprehenderit optio vitae, officia natus et ratione? Libero quisquam optio voluptas praesentium atque sint amet? Beatae.
+        </textarea>
+    </form>
+</body>
+</html>
