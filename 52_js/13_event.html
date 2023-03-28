@@ -35,8 +35,8 @@
         // const 변수 = HTML요소 선택;
         // document 객체의 매서드를 사용하여 HTML요소를 선택
         // document.getElementsById('p1')를 btn으로 줄인 거다.
-        const btn = document.getElementsById('p1');
-        const btn2 = document.getElementsById('p4');
+        const btn = document.getElementById('p1');
+        const btn2 = document.getElementById('p4');
         // 제이쿼리 방식
         // $('선택자')
         const btn3 = $('#p5');
@@ -53,11 +53,11 @@
 
         // 요소.on이벤트종류 = 함수호출
         // 변수를 사용하지 않는 경우
-        document.getElementsById('p2').onclick = fn;
+        document.getElementById('p2').onclick = fn;
 
         // 요소.on이벤트종류 = 함수호출
         // 함수를 직접 선언 (함수 재사용 불가)
-        document.getElementsById('p3').onclick = function () {
+        document.getElementById('p3').onclick = function () {
             alert('클릭하였습니다.');
         }
 
