@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        /* enabled :선택가능 상태 */
+        input:enabled {
+            background: yellow;
+        }
+        /* disabled :선택 불가능 상태 */
+        input:disabled {
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>의사클래스</h1>
+    <!-- 사용할 수 있음 -->
+    <input type="text" value="값을 수정할 수 있음">
+    <!-- 읽기 전용 -->
+    <input type="text" readonly value="값을 선택할 수 있음.">
+    <!-- 사용할 수 없다. -->
+    <input type="text" disabled value="값을 선택할 수 없음.">
+</body>
+</html>
