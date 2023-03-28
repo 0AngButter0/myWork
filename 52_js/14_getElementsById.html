@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JavaScript</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>HTML 요소 선택</h1>
+    <p>나는 단일 요소이다.</p>
+    <ul>
+        <li id="lst1">목록1</li>
+        <li class="lst2">목록2</li>
+        <li>목록3</li>
+    </ul>
+
+    <script>
+        /* 
+            HTML 요소 선택
+            getElementsById('아이디')
+            getElementsByClassName('클래스')
+            getElementsByTagName('태그명')
+
+            단일 요소: querySelector('선택기')
+                querySelector('#아이디')
+                querySelector('.아이디')
+                querySelector('태그명')
+            같은 이름의 여러 요소: querySelectorAll('선택기')
+
+        */
+
+        /* 
+            document 객체의 method
+            getElementsById('아이디 이름')
+            getElementsByClassName('클래스 이름')
+            getElementsByTagName('태그 이름')
+        */
+
+        // 변수 선언
+        const lst1 = document.getElementById('lst1'),
+            lst2 = document.getElementsByClassName('lst2'),
+            para = document.getElementsByTagName('p'),
+            lst3 = document.querySelector('#lst1'),
+            lst4 = document.querySelector('.lst2'),
+            para2 = document.querySelector('p'),
+            lst = document.querySelectorAll('li');
+
+        // 출력
+        document.write(lst1 + '<br>');
+        document.write(lst2 + '<br>');
+        document.write(para + '<br>');
+        document.write(lst3 + '<br>');
+        document.write(lst4 + '<br>');
+        document.write(para2 + '<br>');
+        document.write(lst + '<br>');
+    </script>
+</body>
+</html>
