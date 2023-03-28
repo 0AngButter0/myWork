@@ -1,0 +1,19 @@
+작업영역 폴더 추가
+
+추가된 폴더 선택
+f1 -> 검색:  >sftp.config 검색 -> vs코드 파일 생성됨
+
+
+"protocol": "ftp",   :무료포트
+"port": 21,
+
+"password": "web0118!",   :패스워드는 직접 쓰는 부분
+
+"uploadOnSave": false.    :자동 업로드 할지 안할지 설정/  true로 바꾸면 자동 저장 가능
+"useTempFile": false,
+
+
+닷홈 90일마다 서버 연장 연락옴/연장 알아서
+
+
+반응형은 미디어 쿼리 사이즈마다 css를 다 넣어주는 것...
