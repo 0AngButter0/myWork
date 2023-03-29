@@ -31,7 +31,7 @@ body {
     font-size: 15px;
     line-height:1.5; */
     /* 한 줄로 줄여 쓸 수 있다. */
-    font: 1.5rem/1.8 verdana, sans-serif;
+    font: 1.5rem/1.6 verdana, sans-serif;
     color: #000;
 }
 
@@ -53,11 +53,13 @@ h2 {
     font-size: 24px;
     color: #fff;
     letter-spacing: 4px;
+    font-weight:normal;
 }
 
 h3 {
     /* section3 - Sub Title */
     font-size: 24px;
+    font-weight:normal;
 }
 
 p {
@@ -84,5 +86,9 @@ nav a {
 
 .copy {
     color: #fff;
+}
+
+#section3 li p:first-of-type {
+    color:#999;
 }
 
