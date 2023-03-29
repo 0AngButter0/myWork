@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+<body>
+    <h1>배열</h1>
+    <h2>splice 메서드</h2>
+    <script>
+        // 배열 생성
+        // index번호  0  1  2  3  4
+        const nums = [1, 2, 3, 4, 5];
+        const study = ['html', 'css', 'js', 'jq'];
+
+        // 객체.메서드
+        // 배열.splice(index);
+        // index 번호부터 끝까지 삭제
+        nums.splice(2);
+        // 배열.splice(index, count)
+        // index 번호부터 count 개수 만큼 삭제
+        study.splice(2, 1);
+
+        // 배열.splice(index, count, value, value1, value2, ...)
+        // index 번호부터 count 개수만큼 삭제 후 value를 추가
+        study.splice(2, 1, 'javascript', 'photo', 'illust');
+
+        // 출력
+        document.write(nums + '<br>');
+        document.write(study + '<br>');
+        console.log(nums);
+    </script>
+</body>
+</html>

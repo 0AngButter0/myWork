@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <h1>미디어</h1>
+    <h2>비디오</h2>
+    <!-- 소리를 끄면 자동 실행된다. -->
+    <video height="200" autoplay muted loop>
+        <source src="assets/school.mp4" type="video/mp4">
+        <source src="assets/school.webm" type="video/webm">
+        당신의 브라우저는 video 태그를 지원하지 않는다.
+    </video>
+    <video height="200" controls>
+        <source src="assets/video.mp4" type="video/mp4">
+        <source src="assets/WEBM_trance.webm" type="video/webm">
+        <source src="assets/video.ogg" type="video/ogg">
+        당신의 브라우저는 video 태그를 지원하지 않는다.
+    </video>
+
+    <h2>유튜브</h2>
+    <!-- 유튜브 들어가서 동영상 우클릭, 소스코드 복사 -> src만 남기고 다 지운상태-->
+    <!-- width="1280" height="720" -->
+    <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ"></iframe>
+
+    <h2>오디오</h2>
+    <audio src="assets/I Love My Mom - Reed Mathis.mp3" autoplay loop></audio>
+    <audio>
+        <source src="assets/I Love My Mom - Reed Mathis.mp3" type="audio/mp3">
+        <source src="assets/I Love My Mom - Reed Mathis.wav" type="audio/wav">
+        당신의 브라우저는 audio 태그를 지원하지 않는다.
+    </audio>
+    <audio controls>
+        <source src="assets/MP3.mp3" type="audio/mp3">
+        <source src="assets/MP3.wav" type="audio/wav">
+        <source src="assets/MP3.ogv" type="audio/ogv">
+        당신의 브라우저는 audio 태그를 지원하지 않는다.
+    </audio>
+</body>
+</html>

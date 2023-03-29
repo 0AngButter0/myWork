@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+<body>
+    <h1>배열</h1>
+    <h2>slice 메서드</h2>
+    <script>
+        // 배열 생성
+        // index번호  0  1  2  3  4
+        const nums = [1, 2, 3, 4, 5];
+        const study = ['html', 'css', 'js', 'jq'];
+
+        // 객체.메서드
+        // 배열.slice(index);
+        // index 번호부터 끝까지 복제
+        const slice1 = nums.slice(2);
+        // 배열.slice(index1, index2)
+        // index 시작번호부터 index2 끝번호 -1 까지 복제
+        const slice2 = study.slice(1, 3);
+
+        // 배열.slice(index, count, value, value1, value2, ...)
+        // index 번호부터 count 개수만큼 복제 후 value를 추가
+        const slice3 = study.slice(2, 1, 'javascript', 'photo', 'illust');
+
+        // 출력
+        document.write(nums + '<br>');
+        document.write(study + '<br>');
+        document.write(slice1 + '<br>');
+        document.write(slice2 + '<br>');
+        document.write(slice3 + '<br>');
+        console.log(nums);
+    </script>
+</body>
+</html>

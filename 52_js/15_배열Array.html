@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+<body>
+    <h1>배열</h1>
+    <script>
+        // 변수 선언
+        const spring = '봄';
+        const summer = '여름';
+        const fall = '가을';
+        const winter = '겨울';
+
+        // 배열 생성
+        // 자동적으로 고유 넘버링이 붙으며 0부터 시작한다.
+        //              0       1       2       3
+        const seasen = ['봄', '여름', '가을', '겨울'];
+        // 아래보다 위에 방법이 더 좋다.
+        const seasen2 = new Array ('봄', '여름', '가을', '겨울');
+
+        // 출력
+        document.write(spring + '<br>');
+        // 전부 출력
+        document.write(seasen + '<br>');
+        // for를 사용해 0~3까지 4가지 전부 나오게 출력
+        for (let i = 0; i < 4; i++) {
+        // 고유 넘버링으로 특정 값만 출력
+            document.write(seasen[i] + '<br>');
+        }
+        console.log(seasen);
+
+        document.write(seasen2 + '<br>');
+        for (let i = 0; i < 4; i++) {
+            document.write(seasen2[i] + '<br>');
+        }
+        console.log(seasen2);
+    </script>
+</body>
+</html>

@@ -23,6 +23,7 @@
 }
 
 html {
+    scroll-behavior:smooth;
     font-size: 10px;
 }
 
@@ -139,6 +140,7 @@ nav li {
     width: 1484px;
     /* 블록레벨요소의 가로 가운데 배치 */
     margin: 0 auto;
+    padding-top:40px;
 }
 
 .container .bt {
@@ -186,6 +188,9 @@ nav li {
     margin-bottom: 16px;
     /* 1484 = 359 * 4 = 1436 + 16 * 3 = 1484 */
     /* margin:8px; */
+}
+#section2 li iframe {
+    height:239px;
 }
 
 
