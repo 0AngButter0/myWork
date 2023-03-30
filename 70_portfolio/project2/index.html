@@ -6,7 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BR Archteck</title>
+    <!-- bxslider 동작 시키키 위해 js, css를 가져와서 연결(순서는 가장 위로)  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- 순수 자바스크립트(바닐라 스크립트) -->
+    <script src="script/clock.js"></script>
+    <!-- 제이쿼리 라이브러리는 사용자 제이쿼리 코드보다 반드시 위에 있어야지 동작-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bxslider 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <!-- 사용자 제이쿼리 코드 -->
+    <script src="script/slide.js"></script>
 </head>
 
 <body>
@@ -24,46 +34,37 @@
     </header> <!-- 헤더 -->
 
     <section id="section1" class="container"> <!-- 섹션1 -->
-        <h2 class="mainTit"><b>Mc</b><b class="redd">Donald’s</b></h2>
-        <img src="images/맥도날드1.png" alt="Architecture">
+        <div class="mainTit">
+            <h2><b>Mc</b><b class="redd">Donald’s</b></h2>
+            <div class="clock">
+                <span class="yy">년</span>
+                <span class="mm">월</span>
+                <span class="dd">일</span>
+                <span class="we">요일</span>
+                <span class="hh">시</span>
+                <span class="mi">분</span>
+                <span class="ss">초</span>
+            </div>
+        </div>
+        <div class="slider1">
+            <div><img src="images/맥도날드1.png" alt="맥도날드"></div>
+            <div><img src="images/KakaoTalk_20230330_164508391.jpg" alt="건축 이미지1"></div>
+            <div><img src="images/KakaoTalk_20230330_164508391_01.jpg" alt="건축 이미지2"></div>
+        </div>
     </section> <!-- 섹션1 -->
 
     <section id="section2" class="container"> <!-- 섹션2 -->
         <h3 class="bt">MENU</h3>
-        <ul>
-            <li>
-                <div><img src="images/bg1.png" alt="bg1"></div>
-                <span>빅맥</span>
-            </li>
-            <li>
-                <div><img src="images/bg2.png" alt="bg2"></div>
-                <span>맥크리스피 클래식 버거</span>
-            </li>
-            <li>
-                <div><img src="images/bg3.png" alt="bg3"></div>
-                <span>맥치킨 모짜렐라 버거</span>
-            </li>
-            <li>
-                <div><img src="images/bg4.png" alt="bg4"></div>
-                <span>맥스파이시 크리미 어니언 버거</span>
-            </li>
-            <li>
-                <div><img src="images/bg5.png" alt="bg5"></div>
-                <span>맥스파이시 상하이 버거</span>
-            </li>
-            <li>
-                <div><img src="images/bg6.png" alt="bg6"></div>
-                <span>더블 쿼터파운더 치즈 버거</span>
-            </li>
-            <li>
-                <div><img src="images/bg7.png" alt="bg7"></div>
-                <span>더블 불고기 버거</span>
-            </li>
-            <li>
-                <div><iframe width="1280" height="720" src="https://www.youtube.com/embed/YfMelToW614"></iframe></div>
-                <span>1955 버거</span>
-            </li>
-        </ul>
+        <div class="slider2">
+            <div><img src="images/bg1.png" alt="버거1"></div>
+            <div><img src="images/bg2.png" alt="버거2"></div>
+            <div><img src="images/bg3.png" alt="버거3"></div>
+            <div><img src="images/bg4.png" alt="버거4"></div>
+            <div><img src="images/bg5.png" alt="버거5"></div>
+            <div><img src="images/bg6.png" alt="버거6"></div>
+            <div><img src="images/bg7.png" alt="버거7"></div>
+            <div><img src="images/bg8.png" alt="버거8"></div>
+        </div>
     </section> <!-- 섹션2 -->
 
     <section id="section3" class="container"> <!-- 섹션3 -->
@@ -140,6 +141,8 @@
             전화주문: 1600-5252<br>
             COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's</p>
     </footer> <!-- 푸터 -->
+
+    <!-- <script src="script/clock.js"></script> -->
 </body>
 
 </html>

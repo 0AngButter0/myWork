@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+
+<body>
+    <h1>날짜와 시간</h1>
+    <script>
+
+        // 디지털 시계
+        // secInterval(함수, 시간);
+        // 시간은 밀리초
+        setInterval(timer, 1000);
+
+        function timer() {
+            // Date 생성
+            let date = new Date();
+            // 년
+            let year = date.getFullYear();
+            // 월: 0(1월)~11(12월) (1월을 0으로 보기 때문에 + 1 해줘야 한다.)
+            let month = date.getMonth() + 1;
+            // 일
+            let day = date.getDate();
+            // 시
+            let hour = date.getHours();
+
+            // 요일: 0(일)~6(토)
+            let week = date.getDay();
+
+            let wk;
+
+            if (week === 0) {
+                wk = '일';
+            } else if (week === 1) {
+                wk = '월';
+            } else if (week === 2) {
+                wk = '화';
+            } else if (week === 3) {
+                wk = '수';
+            } else if (week === 4) {
+                wk = '목';
+            } else if (week === 5) {
+                wk = '금';
+            } else {
+                wk = '토';
+            }
+            if (hour > 12) {
+                // hour -= 12;
+                // hour = '오후' + hour;
+                hour = '오후 0' + (hour - 12);
+            } else if (hour > 9) {
+                hour = '오전' + hour;
+            } else {
+                hour = '오전 0' + hour;
+            }
+
+            // 분
+            let minute = date.getMinutes();
+
+            if (minute < 10) {
+                minute = '0' + 'minute';
+            }
+
+            // 초
+            let second = date.getSeconds();
+
+            if (second < 10) {
+                second = '0' + 'second';
+            }
+
+            // 출력
+            document.write(year + '년<br>');
+            document.write(month + '월<br>');
+            document.write(day + '일<br>');
+            document.write(wk + '요일<br>');
+            document.write(hour + '시<br>');
+            document.write(minute + '분<br>');
+            document.write(second + '초<br>');
+        }
+    </script>
+</body>
+
+</html>

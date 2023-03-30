@@ -162,6 +162,7 @@ nav li {
 .mainTit {
     z-index: 1;
     position: absolute;
+    text-align: center;
     top: 50%;
     left: calc(50% + 28px);
     transform: translate(-50%, -50%);
