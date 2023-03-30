@@ -22,7 +22,7 @@ button {
 
 /* 타이포 */
 html {
-        scroll-behavior: smooth;
+    scroll-behavior: smooth;
     font-size: 10px
 }
 
@@ -170,17 +170,17 @@ em {
 #home {
     position: relative;
     height: 1045px;
-    background: url(../images/parallax1.jpg) no-repeat 50% 50%/cover fixed;
+    background: url(../images/it\'s_me.jpg) no-repeat 50% 50%/cover fixed;
 }
 
 #portfolio .para {
     height: 405px;
-    background: url(../images/parallax2.jpg) no-repeat 50% 50%/cover fixed;
+    background: url(../images/idea.jpg) no-repeat 50% 50%/cover fixed;
 }
 
 #contact .para {
     height: 405px;
-    background: url(../images/parallax3.jpg) no-repeat 50% 50%/cover fixed;
+    background: url(../images/contact.jpg) no-repeat 50% 50%/cover fixed;
 }
 
 /* 섹션1 */

@@ -6,7 +6,7 @@
 
 /* phone */
 
-/* header */
+/* 헤더 */
 header {
     display: flex;
     justify-content: space-between;
@@ -23,10 +23,6 @@ header {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
     padding: 0 24px;
 }
-
-/* .logo {
-    float: left;
-} */
 
 header a {
     padding: 8px 16px;
@@ -56,6 +52,7 @@ nav {
     margin-bottom: 32px;
     line-height: 1;
     border-bottom: 1px solid #ccc;
+    padding-top: 70px;
     padding-bottom: 32px;
 }
 
@@ -67,7 +64,7 @@ nav {
 }
 
 
-/* section1 */
+/* 섹션1 */
 #section1 {
     position: relative;
 }
@@ -84,10 +81,6 @@ nav {
 .mainTit b {
     background: #ffbc0d;
     padding: 8px 16px;
-}
-
-#section1 .redd {
-    background: #ba0101;
 }
 
 .mainTit span {
@@ -111,7 +104,7 @@ nav {
     padding: 8px 16px;
 }
 
-/* section3 */
+/* 섹션3 */
 #section3>p {
     margin-bottom: 42px;
 }
@@ -141,14 +134,63 @@ nav {
     background: #ccc;
 }
 
-/* section4 */
+/* 섹션4 */
+#section4 input {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 16px 8px;
+    margin: 10px 0;
+}
 
+#section4 .msg {
+    width: 150px;
+    color: #fff;
+    background: #000;
+    line-height: 1;
+    margin: 26px 0px 43px 0px;
+    border: none;
+}
+
+#section4 .msg:hover {
+    color: #000;
+    background: #ccc;
+}
+
+#section4 .map {
+    height: 300px;
+    margin: 16px 0;
+}
+
+/* 푸터 */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background: #292929;
+}
+
+.addr {
+    width: 100%;
+}
+
+/* SNS */
+.sns {
+    width: 200px;
+    margin-top: 16px;
+}
+
+.sns img {
+    width: 30px;
+    margin: 0 8px;
+}
 
 /* tablet */
 @media (min-width:768px) {
 
-    /* header */
-
+    /* 헤더 */
 
     nav {
         display: block;
@@ -160,6 +202,22 @@ nav {
     }
 
     /* 섹션1 */
+    #section1 .mainTit {
+        z-index: 1;
+        position: absolute;
+        top: calc(50% + 28px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+    }
+
+    #section1 .redd {
+        background: #ba0101;
+    }
+
+    .mainTit span {
+        display: inline-block;
+    }
 
     /* 섹션2, 3 */
     #section2 h2 {
@@ -184,6 +242,10 @@ nav {
 
     /* 섹션3 */
     /* 섹션4 */
+    #section4 .map {
+        height: 500px;
+        margin: 16px 0;
+    }
 }
 
 
@@ -195,9 +257,11 @@ nav {
     #section3 li {
         width: calc(25% - 12px);
     }
+
     #section2 li:not(li:nth-of-type(1), li:nth-of-type(5)) {
         margin-left: 16px;
     }
+
     #section3 li:not(li:nth-of-type(1), li:nth-of-type(5)) {
         margin-left: 16px;
     }
@@ -206,7 +270,11 @@ nav {
 
 @media (min-width:1600px) {
 
-    /* header */
+    /* 헤더 */
+    nav {
+        display: block;
+    }
+
     /* 섹션1 - 4 데스크탑만 적용 */
     .container,
     #section1 {
@@ -215,44 +283,33 @@ nav {
     }
 
     /* 섹션1 */
+    #section1 .mainTit {
+        z-index: 1;
+        position: absolute;
+        top: calc(50% + 28px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+    }
+
+    #section1 .redd {
+        background: #ba0101;
+    }
+
+    .mainTit span {
+        display: inline-block;
+    }
+
     /* 섹션2 */
     /* 섹션3 */
 
     #section3 li {
         width: 359px;
-        float: left;
     }
 
     /* 섹션4 */
-    #section4 input {
-        font-size: 1.5rem;
-        width: 100%;
-        padding: 16px 8px;
-        margin: 10px 0;
-    }
-
-    #section4 .msg {
-        width: 150px;
-        color: #fff;
-        background: #000;
-        line-height: 1;
-        margin: 26px 0px 43px 0px;
-    }
-
-    #section4 .msg:hover {
-        color: #000;
-        background: #ccc;
-    }
-
-    #section4 img {
-        margin: 14px 0;
-    }
-
-    /* 푸터 */
-    footer {
-        width: 100%;
-        padding: 50px 0;
-        text-align: center;
-        background: #000;
+    #section4 .map {
+        height: 850px;
+        margin: 16px 0;
     }
 }

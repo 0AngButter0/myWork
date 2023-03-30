@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리</title>
+    <style>
+        /* 
+            @media [not:only] [mediatpye] [and][,] (expressions:조건식) {
+                CSS-code
+            }
+
+            mediatype: all, screen, tv, print, projection, ...
+            기본은 all이라 보통은 굳이 쓰지 않는다.
+
+            and: 두 개이상의 조건이 모두 만족할 경우 ture
+            ,: 두 개이상의 조건이 둘 중 하나 이상 만족할 경우 true
+            조건식: min-width(최소 가로크기), max-width(최대 가로크기)
+
+            breakpoint(중단점, 브레이크포인트) 설정: 768(Medium	md	≥768px), 992(Large	lg	≥992px)
+                                                    576, 768, 992, 1200, 1400
+        */
+
+        /*  최대576 -> 576이하: x-small */
+        @media (max-width:576px) {
+                /* CSS-code; */
+            }/* 제일 작은 사이즈는 다 생략하고 CSS-code만 써도 된다. */
+        /* 최소576 그리고 최대 768 -> 576이상 768이하: Small장치 */
+        @media (min-width:576px) and (max-width:768px) {
+                /* CSS-code; */
+            }
+        /* 최소768 그리고 최대 992 -> 768이상 992이하: Medium장치 */
+        @media (min-width:768px) and (max-width:992px) {
+                /* CSS-code; */
+            }
+        /* 최소992 그리고 최대 1200 -> 992이상 1200이하:: Large장치 */
+        @media (min-width:992px) and (max-width:1200px) {
+                /* CSS-code; */
+            }
+        /* 1200이상 1400이하: x-Large장치 */
+        @media (min-width:1200px) and (max-width:1400px) {
+                /* CSS-code; */
+            }
+        /* 1400이상: xx-Large */
+        @media (min-width:1400px) {
+                /* CSS-code; */
+            }
+
+            /* 중단점: 768, 1200 */
+            /* and (max-width) -> 생략해도 된다. */
+
+            /* phone */
+        body {background: red;}
+
+            /* tablet */
+        @media (min-width:768px) {
+            body {background: green;}
+        }
+            /* desktop */
+        @media (min-width:1200px) {
+            body {background: blue;}
+        }
+
+    </style>
+</head>
+<body>
+    <h1>미디어쿼리</h1>
+</body>
+</html>
