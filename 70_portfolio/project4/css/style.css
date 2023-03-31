@@ -86,10 +86,6 @@ nav {
     padding: 8px 16px;
 }
 
-#section1 .redd {
-    background: #ba0101;
-}
-
 .mainTit span {
     display: none;
 }
@@ -142,7 +138,37 @@ nav {
 }
 
 /* section4 */
+#section4 input {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 16px 8px;
+    margin: 10px 0;
+}
 
+#section4 .msg {
+    width: 150px;
+    color: #fff;
+    background: #000;
+    line-height: 1;
+    margin: 26px 0px 43px 0px;
+}
+
+#section4 .msg:hover {
+    color: #000;
+    background: #ccc;
+}
+
+#section4 img {
+    margin: 14px 0;
+}
+
+/* 푸터 */
+footer {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background: #000;
+}
 
 /* tablet */
 @media (min-width:768px) {
@@ -160,7 +186,20 @@ nav {
     }
 
     /* 섹션1 */
-
+    #section1 .mainTit {
+        z-index: 1;
+        position: absolute;
+        top: calc(50% + 28px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+    }
+    #section1 .redd {
+        background: #ba0101;
+    }
+    .mainTit span {
+        display: inline-block;
+    }
     /* 섹션2, 3 */
     #section2 h2 {
         margin-bottom: 42px;
@@ -207,6 +246,10 @@ nav {
 @media (min-width:1600px) {
 
     /* header */
+    nav {
+        display: block;
+    }
+
     /* 섹션1 - 4 데스크탑만 적용 */
     .container,
     #section1 {
@@ -215,44 +258,25 @@ nav {
     }
 
     /* 섹션1 */
+    #section1 .mainTit {
+        z-index: 1;
+        position: absolute;
+        top: calc(50% + 28px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+    }
+    #section1 .redd {
+        background: #ba0101;
+    }
+    .mainTit span {
+        display: inline-block;
+    }
     /* 섹션2 */
     /* 섹션3 */
 
     #section3 li {
         width: 359px;
         float: left;
-    }
-
-    /* 섹션4 */
-    #section4 input {
-        font-size: 1.5rem;
-        width: 100%;
-        padding: 16px 8px;
-        margin: 10px 0;
-    }
-
-    #section4 .msg {
-        width: 150px;
-        color: #fff;
-        background: #000;
-        line-height: 1;
-        margin: 26px 0px 43px 0px;
-    }
-
-    #section4 .msg:hover {
-        color: #000;
-        background: #ccc;
-    }
-
-    #section4 img {
-        margin: 14px 0;
-    }
-
-    /* 푸터 */
-    footer {
-        width: 100%;
-        padding: 50px 0;
-        text-align: center;
-        background: #000;
     }
 }

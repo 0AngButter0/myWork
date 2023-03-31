@@ -23,6 +23,7 @@
 }
 
 html {
+    scroll-behavior:smooth;
     font-size: 10px;
 }
 
@@ -89,6 +90,8 @@ nav a {
 }
 
 #section3 li p:first-of-type {
-    color:#999;
+    color:#ba0101;
+    font-size:2rem;
+    font-weight:bold
 }
 
