@@ -2,6 +2,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 @import url('reset.css');
 @import url('typo.css');
+@import url('nav.css');
 
 
 
@@ -38,18 +39,14 @@ header b {
     color: #ffbc0d
 }
 
-nav {
-    display: none;
-}
-
 /* 섹션2 - 4 */
 .container {
     position: relative;
+    padding-top:40px;
     margin: 0 30px;
 }
 
 .container .bt {
-    margin-top: 80px;
     margin-bottom: 32px;
     line-height: 1;
     border-bottom: 1px solid #ccc;
@@ -194,17 +191,6 @@ i {
 /* tablet */
 @media (min-width:768px) {
 
-    /* 헤더 */
-
-    nav {
-        display: block;
-    }
-
-    nav li {
-        /* display:inline-block; 로 처리하면 내비 사이 한칸 공백 생김 알아둘것 */
-        display: inline-block;
-    }
-
     /* 섹션1 */
     #section1 .mainTit {
         z-index: 1;
@@ -274,10 +260,6 @@ i {
 
 @media (min-width:1600px) {
 
-    /* 헤더 */
-    nav {
-        display: block;
-    }
 
     /* 섹션1 - 4 데스크탑만 적용 */
     .container,

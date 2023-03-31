@@ -7,14 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>맥도날드</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- 순서: 사용자가 작성한 것은 항상 라이브러리 밑에 작성 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- jqeryUI 제이쿼리에 가속도기능을 쓰기 위해 넣는다. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script/script.js"></script>
 </head>
 
 <body>
     <header> <!-- 헤더 -->
         <!-- <h1>로고</h1> -->
         <h1 class="logo"><a href="#"><b>M</b>cDonald’s</a></h1>
+        <!-- 햄버거 버튼 -->
+        <button type="button" class="toggler">
+            <span></span><span></span><span></span>
+        </button>
         <!-- GNB: Global Navigation Bar  -->
-        <nav>
+        <nav id="gnb">
             <ul>
                 <li><a href="#section2"><i class="fa-solid fa-bars"></i>메뉴</a></li>
                 <li><a href="#section3"><i class="fa-solid fa-burger"></i>오늘의 소식</a></li>

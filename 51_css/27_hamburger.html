@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+</head>
+<style>
+    /* reset */
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+    /* Collapsed Menu Icon */
+    .toggler {
+        position: absolute;
+        z-index: 99;
+        right: 30px;
+        top: 30px;
+        width: 20px;
+        height: 16px;
+    }
+
+    /* 작대기 3개를 전부 가운대로 모음 */
+    .toggler span {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        border-top: 2px solid black;
+        transition: 0.3s;
+    }
+
+    /* 작대기 맨 위 */
+    .toggler span:first-of-type {
+        top: 0;
+    }
+
+    /* 작대기 맨 아래 */
+    .toggler span:last-of-type {
+        top: 100%;
+    }
+
+    .toggler.active span:first-of-type {
+        opacity: 0;
+    }
+
+    .toggler.active span:first-of-type,
+    .toggler.active span:last-of-type {
+        top: 50%;
+    }
+
+    .toggler.active span:nth-of-type(2) {
+        transform: rotate(45deg);
+        border-top: 2px solid #ff0000;
+    }
+
+    .toggler.active span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        border-top: 2px solid #ff0000;
+    }
+</style>
+
+<body>
+    <h1>햄버거 버튼</h1>
+    <button type="button" class="toggler">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(function () {
+            /* mobile toggler button */
+            let flag = 0;
+            $(".toggler").click(function () {
+                if (flag === 0) {
+                    // $(this)는 이벤트를 발생한 객체
+                    // classList.add("클래스명") ~ 클래스를 추가(js에서)
+                    // addClass("클래스명") ~ 클래스를 추가
+                    $(this).addClass("active");
+                    flag = 1;
+                } else {
+                    // classList.remove("클래스") ~ 클래스 삭제(js에서)
+                    // removeClass("클래스") ~ 클래스 삭제
+                    $(this).removeClass("active");
+                    flag = 0;
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+
+</html>
