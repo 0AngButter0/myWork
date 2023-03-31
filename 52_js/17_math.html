@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS+JS</title>
+    <style>
+        img {width:200px;}
+    </style>
+</head>
+<body>
+    <h1>Math 객체</h1>
+    <div>
+        <img src="assets/1.jpg" alt="랜덤 이미지">
+    </div>
+    <span></span><button>버튼</button><br>
+    <hr>
+
+    <script>
+        // 반올림
+        document.write(Math.round(3.141592) + '<br>');
+        // 올림
+        document.write(Math.ceil(3.141592) + '<br>');
+        // 내림
+        document.write(Math.floor(3.141592) + '<br>');
+        // 잘림(소수점 부분을 잘라낸다.)
+        document.write(Math.trunc(3.141592) + '<br>');
+
+        // 거듭제곱: 2 * 2 * 2 = 8
+        // 연산자로 표현: 2 ** 3 = 8
+        document.write(Math.pow(2, 3) + '<br>');
+        // 제곱근
+        document.write(Math.sqrt(4) + '<br>');
+        // 절대값(양수화)
+        document.write(Math.abs(-3.141592) + '<br>');
+
+        // 최소값
+        document.write(Math.min(1, 2, 3, 4, 5) + '<br>');
+        // 촤대값
+        document.write(Math.max(1, 2, 3, 4, 5) + '<br>');
+        // 난수: 0 <= x < 1
+        // 난수: 0 + 1 <= x < 1 + 1
+        document.write(Math.random() + 1 + '<br>');
+        // 난수: 0 * 6 + 1 <= x < 1 * 6 + 1
+        document.write(Math.random() * 6 + 1 + '<br>');
+
+        const btn = document.querySelector('button');
+        const num = document.querySelector('span');
+        const img = document.querySelector('img');
+        
+
+        btn.addEventListener('click', function(){
+            let num = Math.floor(Math.random() * 6 + 1);
+            // HTML 요소 속성을 변경
+            // img.setAttribute('HTML속성명', '값');
+            img.setAttribute('src', 'assets/' + num + '.jpg');
+        });
+    </script>
+</body>
+</html>

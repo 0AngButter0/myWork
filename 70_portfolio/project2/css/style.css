@@ -92,7 +92,7 @@ nav a {
 header {
     /* fixed와 absolute로 지정하면 width가 콘텐츠 크기로 지정된다.  */
     /* 네비게이션 바를 상단에 고정하기위해 fixed를 써야한다. */
-    z-index: 999;
+    z-index: 99999;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -162,6 +162,7 @@ nav li {
 .mainTit {
     z-index: 1;
     position: absolute;
+    text-align: center;
     top: 50%;
     left: calc(50% + 28px);
     transform: translate(-50%, -50%);
@@ -213,21 +214,20 @@ nav li {
 }
 
 /* 섹션3 */
+#section3 {
+    overflow:hidden;
+}
 #section3>p {
     margin-bottom: 42px;
 }
 
-#section3 li * {
-    margin: 8px 0;
+#section3 ul {
+    display:flex;
+    justify-content: space-between;
 }
-
 #section3 li {
+    position: relative;
     width: 359px;
-    float: left;
-}
-
-#section3 li:not(li:nth-of-type(1)) {
-    margin-left: 16px;
 }
 
 #section3 li p:nth-of-type(1) {

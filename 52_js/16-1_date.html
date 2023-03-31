@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+JS</title>
+</head>
+<body>
+    <h1>날짜와 시간</h1>
+    <script>
+        // Date 생성
+        const date = new Date();
+
+        // 년
+        const year = date.getFullYear();
+        // 월: 0(1월)~11(12월) (1월을 0으로 보기 때문에 + 1 해줘야 한다.)
+        const month = date.getMonth() + 1;
+        // 일
+        const day = date.getDate();
+        // 요일: 0(일)~6(토)
+        const week = date.getDay();
+        // 시
+        const hour = date.getHours();
+        // 분
+        const minute = date.getMinutes();
+        // 초
+        const second = date.getSeconds();
+
+        // 출력
+        document.write(year + '년<br>');
+        document.write(month + '월<br>');
+        document.write(day + '일<br>');
+        document.write(week + '요일<br>');
+        document.write(hour + '시<br>');
+        document.write(minute + '분<br>');
+        document.write(second + '초<br>');
+        
+    </script>
+</body>
+</html>
